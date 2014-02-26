@@ -1,11 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>ejemplo maquetacion</title>
+    <title>ejemplo de maquetacion</title>
 </head>
 <body>
     <div id="a1" class="fgris">
-        <ul id="menu">
+        <ul id="menu1" class="breadcrum">
             <li>
                 <a href="">Home</a>
             </li>
@@ -13,21 +14,21 @@
                 <a href="">Mollis</a>
             </li>
             <li>
-                <a href="">Curcus</a>
+                <span class="actual">Curcus</span>
             </li>
         </ul>
     </div>
     <div id="a2" class="fgris">
-        <div id="wrapper2">
-            <div id="miniatura">
+        <div id="contenido" class="fcenter">
+            <div class="marco fleft col-20">
                 <img src="" alt="miniatura de la imagen">
-                <p>Best offer</p>
-                <span>$154.00</span>
-                <input type="button" name="buy" value="buy"/>
+                <p class="txt-red">Best offer</p>
+                <span class="bold">$154.00</span>
+                <input type="button" name="buy" class="btn-big btn-buy" value="buy"/>
                 <p>from facilisis id sit amet sapienid sit amet sapien</p>
             </div>
-            <div id="contenido2">
-                <h2>
+            <div class="fleft col-80">
+                <h2 class="uppercase">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua.
                 </h2>
@@ -38,7 +39,7 @@
         </div>
     </div>
     <div id="a3" class="fgris">
-        <table>
+        <table class="fcenter">
             <thead>
                 <tr>
                     <th colspan="6">5 offers</th>
@@ -51,33 +52,269 @@
             <tbody>
                 <tr>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="cuadrado"></td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="redondo"></td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="mano">
+                        <span class="txt-grey">256</span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="estrella">
+                        <span class="txt-grey">Sit</span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="bocadillo">
+                        <span class="txt-grey">3</span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <span class="border">
+                            <span class="uppercase">Share</span>
+                            <span>
+                                <a href="">
+                                    <img src="" alt="a"></a>
+                                <a href="">
+                                    <img src="" alt="b"></a>
+                                <a href="">
+                                    <img src="" alt="c"></a>
+                                <a href="">
+                                    <img src="" alt="d"></a>
+                            </span>
+                        </span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <span>$158.00</span>
+                    </td>
+                    <td></td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <span class="txt-red uppercase">Lectus</span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <span class="txt-red bold">$158.00</span>
+                    </td>
                     <td>
-                        <img src="" alt="img"></td>
+                        <input type="button" class="btn btn-buy" value="Buy"></td>
+                </tr>
+                <tr>
                     <td>
-                        <img src="" alt="img"></td>
+                        <img src="" alt="cuadrado"></td>
+                    <td>
+                        <img src="" alt="redondo"></td>
+                    <td>
+                        <img src="" alt="mano">
+                        <span class="txt-grey">256</span>
+                    </td>
+                    <td>
+                        <img src="" alt="estrella">
+                        <span class="txt-grey">Nam</span>
+                    </td>
+                    <td>
+                        <img src="" alt="bocadillo">
+                        <span class="txt-grey">3</span>
+                    </td>
+                    <td>
+                        <span class="border"><span class="uppercase">Share</span></span></td>
+                    <td>
+                        <span>$175.00</span>
+                    </td>
+                    <td></td>
+                    <td>
+                        <span class="txt-red uppercase">Lectus</span>
+                    </td>
+                    <td>
+                        <span class="txt-red bold">$175.00</span>
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-buy" value="Buy"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="cuadrado"></td>
+                    <td></td>
+                    <td>
+                        <img src="" alt="mano">
+                        <span class="txt-grey">256</span>
+                    </td>
+                    <td>
+                        <img src="" alt="estrella">
+                        <span class="txt-grey">Nam</span>
+                    </td>
+                    <td>
+                        <img src="" alt="bocadillo">
+                        <span class="txt-grey">3</span>
+                    </td>
+                    <td>
+                        <span class="border"><span class="uppercase">Share</span></span></td>
+                    <td>
+                        <span>$179.00</span>
+                    </td>
+                    <td>
+                        <span>2%</span>
+                    </td>
+                    <td>
+                        <span>+$3.99</span>
+                    </td>
+                    <td>
+                        <span class="txt-red bold">$179.00</span>
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-go" value="Go"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="cuadrado"></td>
+                    <td></td>
+                    <td>
+                        <img src="" alt="mano">
+                        <span class="txt-grey">256</span>
+                    </td>
+                    <td>
+                        <img src="" alt="estrella">
+                        <span class="txt-grey">Nam</span>
+                    </td>
+                    <td>
+                        <img src="" alt="bocadillo">
+                        <span class="txt-grey">3</span>
+                    </td>
+                    <td>
+                        <span class="border"><span class="uppercase">Share</span></span></td>
+                    <td>
+                        <span>$180.00</span>
+                    </td>
+                    <td>
+                        <span>180%</span>
+                    </td>
+                    <td>
+                        <span class="txt-red uppercase">Lectus</span>
+                    </td>
+                    <td>
+                        <span class="txt-red bold">$180.50</span>
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-buy" value="Buy"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="" alt="cuadrado"></td>
+                    <td>
+                        <img src="" alt="redondo"></td>
+                    <td>
+                        <img src="" alt="mano">
+                        <span class="txt-grey">256</span>
+                    </td>
+                    <td>
+                        <img src="" alt="estrella">
+                        <span class="txt-grey">Nam</span>
+                    </td>
+                    <td>
+                        <img src="" alt="bocadillo">
+                        <span class="txt-grey">3</span>
+                    </td>
+                    <td>
+                        <span class="border"><span class="uppercase">Share</span></span></td>
+                    <td>
+                        <span>$201.00</span>
+                    </td>
+                    <td></td>
+                    <td>
+                        <span>$201.00</span>
+                    </td>
+                    <td>
+                        <span class="txt-red bold">$201.00</span>
+                    </td>
+                    <td>
+                        <input type="button" class="btn btn-buy" value="Buy"></td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <div id="a4" class="fblanco"></div>
-    <div id="a5" class="fgris"></div>
+    <div id="a4" class="fblanco">
+        <div class="centrado">
+            <div class="fleft col-50">
+                <h3>Donec laoreet ornare venenatis</h3>
+                <ul>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                    <li>
+                        Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                    </li>
+                </ul>
+            </div>
+            <div class="fleft col-50">
+                <h3>
+                    Phasellus commodo neque ac elit vehicula, a iaculis nisi facilisis
+                </h3>
+                <ul class="related">
+                    <li>
+                        <span class="fleft col-20 txt-blue">Sed at malis omnesque delicata, usu et iusto zzril meliore.</span>
+                        <span class="fleft col-80">
+                            Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                        </span>
+                    </li>
+                    <li>
+                        <span>Sed at malis omnesque delicata, usu et iusto zzril meliore.</span>
+                        <span>
+                            Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                        </span>
+                    </li>
+                    <li>
+                        <span>Sed at malis omnesque delicata, usu et iusto zzril meliore.</span>
+                        <span>
+                            Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                        </span>
+                    </li>
+                    <li>
+                        <span>Sed at malis omnesque delicata, usu et iusto zzril meliore.</span>
+                        <span>
+                            Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque.
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="a5" class="fgris footer">
+        <div class="centrado">
+            <p>
+                Quisquam.com is a trademark of quisquam.com, Inc. Class aptent taciti maiorum eloquentiam cum cu, sit summo dolor essent te quodsi nusquam legendos has, ea dicit voluptua
+                <span>condimentum</span>
+                pro.
+            </p>
+            <ul>
+                <li>
+                    <a href="">&copy;Quisquam2013 quisquam.com</a>
+                </li>
+                <li>
+                    <a href="">Terms &amp; Conditions</a>
+                </li>
+                <li>
+                    <a href="">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
