@@ -2,6 +2,9 @@
  interlineado: 20.72 - 20.72/14 = 1.48em
 fuente: source sans pro
 color: #464646*/
+* {border: 1px solid green;
+    box-sizing: border-box; /*experimental. para que ocupe lo requerido*/
+}
 
 html, body {
     background-color: #f7f7f7;
@@ -16,12 +19,48 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+ul {
+    margin-top: 0;
+    list-style: none;
+}
+
+
+.list-blue {
+padding-left: 0;
+}
+
 h1, .h1 {
     font-size:2em; /*28pt / 14pt = 2em inter: */
     text-transform: uppercase;
     line-height: 1.08em;
     font-weight: normal;
 }
+
+.fcenter {
+    width: 990px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.col-25 { width: 25%;}
+.col-75 { width: 75%;}
+.col-50 { width: 50%;}
+
+.fleft {
+    float: left;
+}
+
 
 /*colores*/
 
@@ -36,6 +75,7 @@ h1, .h1 {
 .breadcrum {
     text-transform: uppercase;
     list-style: none;
+    padding-left: 0;
 }
 
 .breadcrum .actual, .menu .actual {
@@ -43,7 +83,8 @@ h1, .h1 {
 }
 
 .btn {
-
+    color:white;
+    padding: 0.2em 1.2em;
 }
 
 .btn-big {
