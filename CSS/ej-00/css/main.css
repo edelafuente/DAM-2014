@@ -1,0 +1,59 @@
+/* texto base: 14pt
+ interlineado: 20.72 - 20.72/14 = 1.48em
+fuente: source sans pro
+color: #464646*/
+
+html, body {
+    background-color: #f7f7f7;
+    font: 14pt "Source Sans Pro", sans-serif;
+    color: #464646;
+    line-height: 1.48em; /*interlineado*/
+    font-weight: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1, .h1 {
+    font-size:2em; /*28pt / 14pt = 2em inter: */
+    text-transform: uppercase;
+    line-height: 1.08em;
+    font-weight: normal;
+}
+
+/*colores*/
+
+.txt-red {
+    color: red;
+}
+
+.fblanco {
+    background: white;
+}
+
+.breadcrum {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.breadcrum .actual, .menu .actual {
+    color: red;
+}
+
+.btn {
+
+}
+
+.btn-big {
+    font-size: 1.2em;
+}
+
+.btn-buy {
+    background-color: red;
+}
+
+.btn-go {
+    background-color: green;
+}
