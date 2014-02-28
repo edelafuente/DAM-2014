@@ -1,8 +1,11 @@
+
+
+
 /* texto base: 14pt
  interlineado: 20.72 - 20.72/14 = 1.48em
 fuente: source sans pro
 color: #464646*/
-* {border: 1px solid green;
+* {
     box-sizing: border-box; /*experimental. para que ocupe lo requerido*/
 }
 
@@ -27,9 +30,26 @@ ul {
     list-style: none;
 }
 
+.list{
+    list-style: none;
+    padding-left: 0;
+}
 
-.list-blue {
-padding-left: 0;
+.list p{
+    margin:0;
+}
+
+.list li{
+    padding: 20px 0;
+}
+
+.list li:first-child{
+    padding-top: 0;
+}
+
+.list-blue li{
+    background: transparent url(../imagenes/bullet-blue.png) no-repeat 0 20px;
+    padding-left: 20px;
 }
 
 h1, .h1 {
@@ -39,10 +59,36 @@ h1, .h1 {
     font-weight: normal;
 }
 
+.marco{
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 0 5px grey;
+}
+
+.marco p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    min-width: 0%;
+}
+
+/*wrapper*/
 .fcenter {
     width: 990px;
     margin: 0 auto;
     padding: 40px 0;
+}
+
+.fcenter:before, .fcenter:after,
+.clearfix:before, .clearfix:after{
+    content: "";
+    display: table;
+}
+
+.fcenter:after, .clearfix:after{
+    clear: both;
 }
 
 .center {
@@ -57,44 +103,107 @@ table {
 .col-75 { width: 75%;}
 .col-50 { width: 50%;}
 
+.descripcion{
+    padding-left: 20px;
+}
+
 .fleft {
     float: left;
 }
 
+.italic{
+    font-style: italic;
+}
 
 /*colores*/
 
-.txt-red {
+.txt-red{
     color: red;
+}
+
+.txt-blue{
+    color: #69A9E0;
 }
 
 .fblanco {
     background: white;
 }
 
-.breadcrum {
+.price{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.breadcrumb {
     text-transform: uppercase;
     list-style: none;
     padding-left: 0;
 }
 
-.breadcrum .actual, .menu .actual {
+.breadcrumb li{
+    display: inline-block;
+}
+
+.breadcrumb li:after{
+    content: "/";
+}
+
+.breadcrumb li.actual:after{
+    content: "";
+}
+
+.breadcrumb a{
+    margin-right: 5px;
+}
+
+.breadcrumb .actual, .menu .actual {
     color: red;
 }
 
-.btn {
-    color:white;
-    padding: 0.2em 1.2em;
+* .fgris:first-child .fcenter{
+    padding-bottom: 0;
 }
 
-.btn-big {
-    font-size: 1.2em;
+.footer li{
+    display: inline-block;
+}
+
+/*Botones*/
+
+.btn {
+    margin: auto 5px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+
+    width: 75px;
+    padding: 2px;
+
+    border-radius: 3px;
+    box-shadow: 0 3px 5px grey;
+    background-image: linear-gradient(to bottom, #999, #CCC);
+
 }
 
 .btn-buy {
-    background-color: red;
+    background-image: linear-gradient(to bottom, #f74040 80%, #d33535);
 }
 
 .btn-go {
-    background-color: green;
+    background-image: linear-gradient(to bottom, #23BE2E 80%, #258E2D);
 }
+
+.btn-big {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/*TODO*/
+/*
+    Botones
+    Tabla
+    Balines
+    Pie en linea
+*/
