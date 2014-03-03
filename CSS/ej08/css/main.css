@@ -1,0 +1,32 @@
+
+@font-face{
+    font-family: 'nightbird';
+    src: url('../fonts/nightbird.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+p:first-child {
+    font-family: 'nightbird';
+    font-size: 4em;
+    margin: 1em;
+    padding: 0 5px;
+    text-shadow: 0.1em 0.1em 0.2em red;
+}
+
+p:nth-child(2) {
+    font-family: 'nightbird';
+    font-size: 4em;
+    margin: 1em;
+    padding: 0 5px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em blue;
+}
+
+p:nth-child(3) {
+    font-family: 'nightbird';
+    font-size: 4em;
+    margin: 1em;
+    padding: 0 5px;
+    text-shadow: -0.1em -0.1em 0.1em green, 0.1em 0.1em 0.1em red;
+}

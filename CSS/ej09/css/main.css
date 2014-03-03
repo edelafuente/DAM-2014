@@ -1,0 +1,23 @@
+#container > div {
+    margin-bottom: 10px;
+    border: 1px dotted #000;
+    width: 250px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    border: 5px solid gray;
+    background-color: silver;
+    margin: 25px auto;
+}
+
+#ex01{
+    -webkit-transform: translatex(100px) translatey(50px);
+    -webkit-transform-origin: bottom left;
+}
+
+#ex02{
+    -webkit-transform: scalex(1.2) scaley(1.2);
+    -webkit-transform-origin: top left;
+}
