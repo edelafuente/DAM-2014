@@ -75,11 +75,18 @@ img{
 }
 
 /*wrapper*/
-.fcenter {
-    width: 990px;
-    margin: 0 auto;
-    padding: 40px 0;
+
+.overflowx{
+    overflow-x: scroll;
 }
+
+.fcenter {
+    width: 90%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 4.0404040404% 0; /* 40px / 990px * 100 = 4.04... */
+}
+
 
 .fcenter:before, .fcenter:after,
 .clearfix:before, .clearfix:after{
@@ -137,7 +144,7 @@ table {
 .breadcrumb {
     text-transform: uppercase;
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .breadcrumb li{
@@ -198,6 +205,105 @@ table {
 .btn-big {
     padding-top: 7px;
     padding-bottom: 7px;
+}
+
+.read-more{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+/*media-queries*/
+
+@media screen and (max-width: 768px){
+    .fcenter{
+        padding: 2.0202020202% 0;
+    }
+
+    .col-25.marco{
+        width: 40%;
+    }
+
+    .col-75.descripcion{
+        width: 60%;
+    }
+
+    h1, .h1{
+        font-size: 1.6em;
+        text-transform: none;
+    }
+
+    .descripcion p{
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .read-more{
+        display: block;
+    }
+
+    .fright{
+        float: right;
+    }
+
+    .marco .price{
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .marco .btn-big{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .list li h4{
+        float: none;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .list li p{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .fcenter{
+        width: 100%;
+        padding: 3%;
+    }
+
+    .breadcrumb{
+        float: left;
+    }
+
+    .navbar-toggle{
+        display: block;
+        float: right;
+    }
+
+    .col-25.marco {
+        width: 100%;
+    }
+
+    .marco img{
+        display: block;
+        margin: auto;
+    }
+
+    .col-75.descripcion {
+        width: 100%;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
 }
 
 /*TODO*/
