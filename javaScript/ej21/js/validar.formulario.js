@@ -19,11 +19,11 @@ HTMLFormElement.prototype.validar = function(opts){
         if(!APP.validador.required(this.value)){
             if (opts){
                 llamarErrores(opts.required);
-                this.classList.add("wrong");
+                this.classList.add(opts.required.class);
             }
         }
         else{
-            this.classList.remove("wrong");
+            this.classList.remove(opts.required.class);
             errores.pop();
         }
     };
@@ -32,11 +32,11 @@ HTMLFormElement.prototype.validar = function(opts){
         if(!APP.validador.email(this.value)){
             if (opts){
                 llamarErrores(opts.email);
-                this.classList.add("wrong");
+                this.classList.add(opts.email.class);
             }
         }
         else{
-            this.classList.remove("wrong");
+            this.classList.remove(opts.email.class);
             errores.pop();
         }
     };
@@ -45,11 +45,11 @@ HTMLFormElement.prototype.validar = function(opts){
         if(!APP.validador.password(this.value)){
             if (opts){
                 llamarErrores(opts.password);
-                this.classList.add("wrong");
+                this.classList.add(opts.password.class);
             }
         }
         else{
-            this.classList.remove("wrong");
+            this.classList.remove(opts.password.class);
             errores.pop();
         }
     };
@@ -58,11 +58,11 @@ HTMLFormElement.prototype.validar = function(opts){
         if(!APP.validador.mini(this.value)){
             if (opts){
                 llamarErrores(opts.mini);
-                this.classList.add("wrong");
+                this.classList.add(opts.mini.class);
             }
         }
         else{
-            this.classList.remove("wrong");
+            this.classList.remove(opts.mini.class);
             errores.pop();
         }
     };
@@ -71,11 +71,11 @@ HTMLFormElement.prototype.validar = function(opts){
         if(this.checked ===  false){
             if (opts){
                 llamarErrores(opts.check);
-                this.labels[0].classList.add("checkwrong");
+                this.labels[0].classList.add(opts.check.class);
             }
         }
         else{
-            this.labels[0].classList.remove("checkwrong");
+            this.labels[0].classList.remove(opts.check.class);
             errores.pop();
         }
     };
@@ -96,6 +96,7 @@ HTMLFormElement.prototype.validar = function(opts){
 
     };
 
+    form.addEventListener("submit", validarSubmit);
     for (var i = 0; i < elementos.length; i++) {
         switch(elementos[i].dataset.validator){
             case 'required' : elementos[i].addEventListener("blur", validarRequerido); break;
@@ -108,7 +109,7 @@ HTMLFormElement.prototype.validar = function(opts){
         }
 
     }
-    form.addEventListener("submit", validarSubmit);
+
 
 
 };

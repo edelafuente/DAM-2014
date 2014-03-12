@@ -8,23 +8,23 @@ window.onload = function(){
     $('#registro').validar({
         'required' : {
             'error' : 'This field is required',
-            'class' : 'error'
+            'class' : 'wrong'
         },
         'email' : {
             'error' : 'This email is not correct',
-            'class' : 'error'
+            'class' : 'wrong'
         },
         'password' : {
             'error' : 'This password is not correct',
-            'class' : 'error'
+            'class' : 'wrong'
         },
         'mini' : {
             'error' : 'This text is not enough',
-            'class' : 'error'
+            'class' : 'wrong'
         },
         'check' : {
             'error' : 'Accept the conditions',
-            'class' : 'error'
+            'class' : 'checkwrong'
         }
     });
 };
