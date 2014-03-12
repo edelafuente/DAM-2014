@@ -33,6 +33,7 @@ APP.validador = (function(){
 
     };
 
+
     return {
         required : required,
         email : email,
