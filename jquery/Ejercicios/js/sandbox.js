@@ -98,7 +98,7 @@ $(function(){
     var $newdiv = $('<div/>',{
         'class' : 'module',
         'id' : 'myModule',
-        'html' : '¡Este es el párrafo nuevo!'
+        'html' : '<h2>Imagen</h2>¡Este es el párrafo nuevo!'
     });
     $newdiv.append($img.last().clone()).insertAfter($div2);
 
