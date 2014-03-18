@@ -30,7 +30,7 @@ $(function(){
     console.log($img);
 
     //6
-    var $filas = $('tbody tr:odd').css('background-color','gray');
+    //var $filas = $('tbody tr:odd').css('background-color','gray');
 
     ////////3.8.2//////////
 

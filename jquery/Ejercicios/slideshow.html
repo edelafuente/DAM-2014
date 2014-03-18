@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<title>jQuery Fundamentals :: Slideshow</title>
-	<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>jQuery Fundamentals :: Slideshow</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!-- bxSlider CSS file -->
+  <link href="libs/bxslider/jquery.bxslider.css" rel="stylesheet" />
+  <!-- fancyBox -->
+  <link rel="stylesheet" href="libs/fancyBox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 </head>
 
 <body>
   <ul id="slideshow">
     <li>
       <h2>Fruit</h2>
-      <img src="images/fruit.jpg" alt="fruit" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a id="fruitId" class="fancybox" rel="group" href="images/fruit.jpg"><img src="images/fruit.jpg" alt="fruit" /></a>
+      <!--<img src="images/fruit.jpg" alt="fruit" />-->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </li>
     <li>
       <h2>Vegetables</h2>
-      <img src="images/vegetable.jpg" alt="vegetables" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a id="vegetableId" class="fancybox" rel="group" href="images/vegetable.jpg"><img src="images/vegetable.jpg" alt="vegetables" /></a>
+      <!--<img src="images/vegetable.jpg" alt="vegetables" />-->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </li>
     <li>
       <h2>Bread</h2>
-      <img src="images/bread.jpg" alt="bread" />
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <a id="breadId" class="fancybox" rel="group" href="images/bread.jpg"><img src="images/bread.jpg" alt="bread" /></a>
+      <!--<img src="images/bread.jpg" alt="bread" />-->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
     </li>
   </ul>
+  <a href="#" class="prev" data-target="slideshow">Anterior</a>
+  <a href="#" class="next" data-target="slideshow">Siguiente</a>
 
-  <script src="libs/jquery-1.7.2.js"></script>
-  <script>
-
-  </script>
+  <script src="libs/jquery-1.11.0.min.js"></script>
+  <!-- bxSlider Javascript file -->
+  <script src="libs/bxslider/jquery.bxslider.js"></script>
+  <script src="js/slideshow.js" type="text/javascript"></script>
+  <script src="libs/fancyBox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript"></script>
 </body>
 </html>
-
