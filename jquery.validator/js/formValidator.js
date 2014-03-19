@@ -86,11 +86,30 @@
     };
 
     var llamarErrores = function(err){
-        if (err) {
             console.log(err.error);
             errores.push(err.error);
-        }
     };
+
+    var validarSubmit = function(e){
+
+        var $this = $(this).find(':input[data-validator]');
+        $this.each(function(){
+                switch(this.dataset.validator){
+                    case 'required' : validarRequerido.call(this, { data : e.data });break;
+                    case 'email' : validarEmail.call(this, { data : e.data }); break;
+                    case 'password' : validarPassword.call(this, { data : e.data }); break;
+                    case 'mini' : validarMini.call(this, { data : e.data }); break;
+                    case 'check' : validarCheck.call(this, { data : e.data }); break;
+                }
+        });
+
+        if (errores.length > 0) {
+            e.preventDefault();
+            errores.pop();
+        }
+
+    };
+
     //final funciones
 
 
@@ -106,7 +125,7 @@
             $this.find(':input[data-validator=password]').on('keyup', opts, validarPassword);
             $this.find(':input[data-validator=email]').on('keyup', opts, validarEmail);
             $this.find(':input[data-validator=mini]').on('keyup', opts, validarMini);
-            //$this.on('submit', opts, validarSubmit);
+            $this.on('submit', opts, validarSubmit);
 
 
 
