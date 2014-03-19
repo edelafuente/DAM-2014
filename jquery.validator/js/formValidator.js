@@ -56,10 +56,12 @@
         if(!password(this.value)){
                 llamarErrores(e.data.password);
                 this.classList.add(e.data.password.class);
+                crearAyuda.call(this);
         }
         else{
             this.classList.remove(e.data.password.class);
             errores = [];
+            $('.aviso').remove();
         }
     };
 
@@ -88,6 +90,19 @@
     var llamarErrores = function(err){
             console.log(err.error);
             errores.push(err.error);
+    };
+
+    var crearAyuda = function(){
+            $this = $(this);
+            var $aviso = $('.aviso');
+        if ($aviso.length === 0) {
+            var $mess = $('<span/>',{
+                'class' : 'aviso',
+                'html' : '<strong>La contraseña debe contener: Mayúsculas, minúsculas y al menos un número</strong>'
+            });
+            $mess.insertAfter($this);
+        }
+
     };
 
     var validarSubmit = function(e){
@@ -124,7 +139,7 @@
             $this.find(':input[data-validator=required]').on('keyup', opts, validarRequerido);
             $this.find(':input[data-validator=password]').on('keyup', opts, validarPassword);
             $this.find(':input[data-validator=email]').on('keyup', opts, validarEmail);
-            $this.find(':input[data-validator=mini]').on('keyup', opts, validarMini);
+            $this.find(':input[data-validator=mini]').on('keypress', opts, validarMini);
             $this.on('submit', opts, validarSubmit);
 
 

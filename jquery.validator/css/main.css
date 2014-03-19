@@ -30,3 +30,9 @@ input[type="submit"] {
 .checkwrong{
     color: red;
 }
+.aviso{
+    color: red;
+    font-size: 0.55em;
+    font-style: italic;
+    margin-left: 35%;
+}
