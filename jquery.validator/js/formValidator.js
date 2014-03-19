@@ -37,7 +37,7 @@
         }
         else{
             this.classList.remove(e.data.required.class);
-            errores.pop();
+            errores = [];
         }
     };
 
@@ -48,7 +48,7 @@
         }
         else{
             this.classList.remove(e.data.email.class);
-            errores.pop();
+            errores = [];
         }
     };
 
@@ -59,7 +59,7 @@
         }
         else{
             this.classList.remove(e.data.password.class);
-            errores.pop();
+            errores = [];
         }
     };
 
@@ -70,7 +70,7 @@
         }
         else{
             this.classList.remove(e.data.mini.class);
-            errores.pop();
+            errores = [];
         }
     };
 
@@ -81,7 +81,7 @@
         }
         else{
             this.labels[0].classList.remove(e.data.check.class);
-            errores.pop();
+            errores = [];
         }
     };
 
@@ -105,7 +105,7 @@
 
         if (errores.length > 0) {
             e.preventDefault();
-            errores.pop();
+            errores = [];
         }
 
     };
