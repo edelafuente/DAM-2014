@@ -15,7 +15,7 @@
 
     var required = function(requi){
 
-        var req = /.+/;
+        var req = /^[a-zA-Z]+(\s[a-zA-Z]+)*$/;
         return requi && req.test(requi);
     };
 
