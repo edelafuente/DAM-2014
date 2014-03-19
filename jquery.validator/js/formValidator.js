@@ -1,4 +1,48 @@
 (function($){
+    'use strict';
+
+    $.fn.formValidator = function(options){
+
+        var opts = $.extend({}, $.fn.formValidator.defaults, options);
+
+        return this.filter('form').each(function(){
+            var $this = $(this);
+
+            $this.find(':input[data-validator=required]').on('keyup', opts, validarRequerido);
+            $this.find(':input[data-validator=password]').on('keyup', opts, validarPassword);
+            $this.find(':input[data-validator=email]').on('keyup', opts, validarEmail);
+            $this.find(':input[data-validator=mini]').on('keypress', opts, validarMini);
+            $this.on('submit', opts, validarSubmit);
+
+
+
+        });
+    };
+
+    //defaults
+    $.fn.formValidator.defaults = {
+        'required' : {
+            'error' : 'This field is required',
+            'class' : 'wrong'
+        },
+        'email' : {
+            'error' : 'This email is not correct',
+            'class' : 'wrong'
+        },
+        'password' : {
+            'error' : 'This password is not correct',
+            'class' : 'wrong'
+        },
+        'mini' : {
+            'error' : 'This text is not enough',
+            'class' : 'wrong'
+        },
+        'check' : {
+            'error' : 'Accept the conditions',
+            'class' : 'checkwrong'
+        }
+    };
+    //end of defaults
 
     //funciones validadoras
     var email = function(ml){
@@ -93,7 +137,7 @@
     };
 
     var crearAyuda = function(){
-            $this = $(this);
+            var $this = $(this);
             var $aviso = $('.aviso');
         if ($aviso.length === 0) {
             var $mess = $('<span/>',{
@@ -126,52 +170,6 @@
     };
 
     //final funciones
-
-
-
-    $.fn.formValidator = function(options){
-
-        var opts = $.extend({}, $.fn.formValidator.defaults, options);
-
-        return this.filter('form').each(function(){
-            var $this = $(this);
-
-            $this.find(':input[data-validator=required]').on('keyup', opts, validarRequerido);
-            $this.find(':input[data-validator=password]').on('keyup', opts, validarPassword);
-            $this.find(':input[data-validator=email]').on('keyup', opts, validarEmail);
-            $this.find(':input[data-validator=mini]').on('keypress', opts, validarMini);
-            $this.on('submit', opts, validarSubmit);
-
-
-
-        });
-    };
-
-    //defaults
-    $.fn.formValidator.defaults = {
-        'required' : {
-            'error' : 'This field is required',
-            'class' : 'wrong'
-        },
-        'email' : {
-            'error' : 'This email is not correct',
-            'class' : 'wrong'
-        },
-        'password' : {
-            'error' : 'This password is not correct',
-            'class' : 'wrong'
-        },
-        'mini' : {
-            'error' : 'This text is not enough',
-            'class' : 'wrong'
-        },
-        'check' : {
-            'error' : 'Accept the conditions',
-            'class' : 'checkwrong'
-        }
-    };
-    //end of defaults
-
 
 })(jQuery);
 
