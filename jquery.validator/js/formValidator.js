@@ -27,26 +27,27 @@
     };
     // final funciones validadoras
 
+    var errores = [];
 
     //funciones
     var validarRequerido = function(e){
         if(!required(this.value)){
-                llamarErrores(opts.required);
-                this.classList.add(opts.required.class);
+                llamarErrores(e.data.required);
+                this.classList.add(e.data.required.class);
         }
         else{
-            this.classList.remove(opts.required.class);
+            this.classList.remove(e.data.required.class);
             errores.pop();
         }
     };
 
     var validarEmail = function(e){
         if(!email(this.value)){
-                llamarErrores(opts.email);
-                this.classList.add(opts.email.class);
+                llamarErrores(e.data.email);
+                this.classList.add(e.data.email.class);
         }
         else{
-            this.classList.remove(opts.email.class);
+            this.classList.remove(e.data.email.class);
             errores.pop();
         }
     };
@@ -64,22 +65,22 @@
 
     var validarMini = function(e){
         if(!mini(this.value)){
-                llamarErrores(opts.mini);
-                this.classList.add(opts.mini.class);
+                llamarErrores(e.data.mini);
+                this.classList.add(e.data.mini.class);
         }
         else{
-            this.classList.remove(opts.mini.class);
+            this.classList.remove(e.data.mini.class);
             errores.pop();
         }
     };
 
     var validarCheck = function(e){
         if(this.checked ===  false){
-                llamarErrores(opts.check);
-                this.labels[0].classList.add(opts.check.class);
+                llamarErrores(e.data.check);
+                this.labels[0].classList.add(e.data.check.class);
         }
         else{
-            this.labels[0].classList.remove(opts.check.class);
+            this.labels[0].classList.remove(e.data.check.class);
             errores.pop();
         }
     };
@@ -88,9 +89,6 @@
         if (err) {
             console.log(err.error);
             errores.push(err.error);
-        }
-        else {
-            console.log("error, faltan datos o son incorrectos");
         }
     };
     //final funciones
@@ -104,11 +102,11 @@
         return this.filter('form').each(function(){
             var $this = $(this);
 
-            $this.find('input[data-validator=required]').on('keypress', opts, validarRequerido);
-            $this.find('input[data-validator=password]').on('keypress', opts,validarPassword);
-            $this.find('input[data-validator=email]').on('keypress',validarEmail);
-            $this.find('input[data-validator=mini]').on('keypress',validarMini);
-            //$this.on('submit', validarSubmit);
+            $this.find(':input[data-validator=required]').on('keyup', opts, validarRequerido);
+            $this.find(':input[data-validator=password]').on('keyup', opts, validarPassword);
+            $this.find(':input[data-validator=email]').on('keyup', opts, validarEmail);
+            $this.find(':input[data-validator=mini]').on('keyup', opts, validarMini);
+            //$this.on('submit', opts, validarSubmit);
 
 
 
