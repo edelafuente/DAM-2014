@@ -3,10 +3,10 @@ $(function(){
 
     var mostrar = function(data, textStatus, jqXHR){
             if (data.disponible === 'si') {
-                $('#disponibilidad').text(data.disponible);
+                $('#disponibilidad').text('El nick: '+$nick.val()+' '+data.disponible+' est\u00e1 disponible.');
             }
             else{
-                $('#disponibilidad').text(data.disponible + ' alternativas: '+ data.alternativas);
+                $('#disponibilidad').text('El nick: '+$nick.val()+' '+data.disponible+' est\u00e1 disponible.' + ' Alternativas: '+ data.alternativas);
             }
             };
 
@@ -16,11 +16,10 @@ $(function(){
 
     var comprobar = function(e){
         $nick = $('#login');
-        console.log('prueba');
         e.preventDefault();
         $.ajax({
             url: '../servidor/compruebaDisponibilidadJSON.php',
-            login : $nick.val(),
+            data : { login : $nick.val()},
             dataType : 'json',
             type: 'POST',
             cache : false,
