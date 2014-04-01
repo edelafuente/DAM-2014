@@ -1,0 +1,60 @@
+body {font-family: arial, helvetica;}
+header{
+margin-left: 35%;
+}
+form {
+    width: 600px;
+    margin: 20px auto 0 auto;
+}
+fieldset{
+    background-color: LightBlue;
+}
+label {
+    float: left;
+    width: 150px;
+    margin-left: 20px;
+}
+input{
+width: 300px;
+margin-bottom: 5px;
+}
+input[type="search"]{
+    width: 304px;
+    margin-bottom: 7px;
+}
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin-top: 14px;
+    margin-left: 50%;
+    margin-bottom: 7px;
+}
+progress{
+    width: 300px;
+    height: 20px;
+    margin-left: 30%;
+}
+#resultados1{
+    margin-top: 50px;
+    margin-left: 30%;
+    background-color: Green;
+    color: white;
+    width: 300px;
+    border: 1px solid black;
+}
+#resultados2{
+    margin-top: 10px;
+    margin-left: 30%;
+    background-color: red;
+    color: white;
+    width: 300px;
+    border: 1px solid black;
+}
+#resultados3{
+    margin-top: 10px;
+    margin-left: 30%;
+    background-color: blue;
+    color: white;
+    width: 300px;
+    border: 1px solid black;
+}
