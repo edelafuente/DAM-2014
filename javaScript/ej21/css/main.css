@@ -1,4 +1,8 @@
 body {font-family: arial, helvetica;}
+h1{
+    display: block;
+    float: left;
+}
 form {
     width: 600px;
     margin: 20px auto 0 auto;
