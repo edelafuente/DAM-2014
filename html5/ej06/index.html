@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <title>My Player</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>Ejercicio reproductor</h1>
+  </header>
+  <section id="video" width="640px">
+    <video id="vid">
+      <source src="vids/AT-lemon.webm" type='video/webm; codecs="vp8, vorbis"'>
+      <source src="vids/AT-lemon.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+  </section>
+  <section id="barra"><progress id="progreso" min="0" max="100" value="0"></progress> <span id="tiempo"></span></section>
+  <section id="controles">
+    <input id="play" type="button" value="Iniciar">
+    <input id="pause" type="button" value="Pausa">
+    <input id="stop" type="button" value="Parar">
+    <input id="fwd" type="button" value="Avanzar">
+    <input id="rwd" type="button" value="Retroceder">
+    <input id="start" type="button" value="Inicio">
+    <input id="end" type="button" value="Fin">
+    <input id="fullscreen" type="button" value="Pantalla completa">
+    <input id="vol" type="range" min="0" max="100" step="1" value="100">
+  </section>
+
+<script type="text/javascript" src="../libs/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+  </html>

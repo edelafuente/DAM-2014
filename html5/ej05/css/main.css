@@ -1,0 +1,22 @@
+#contenido{
+    font-size: 2em;
+    border: 1px solid black;
+    width: 30%;
+}
+#resultados1{
+    float: left;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: gray;
+    border: 1px solid black;
+    width: 30%;
+}
+#resultados2{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: gray;
+    border: 1px solid black;
+    width: 30%;
+}
