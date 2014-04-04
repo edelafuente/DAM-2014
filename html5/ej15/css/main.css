@@ -1,0 +1,15 @@
+#contenido1{
+    float:left;
+    width: 40%;
+    border: 1px solid gray;
+    min-height: 200px;
+    background-color: LightGray;
+}
+#contenido2{
+    float: left;
+    margin-left: 10px;
+    width: 40%;
+    border: 1px solid gray;
+    min-height: 200px;
+    background-color: LightGray;
+}

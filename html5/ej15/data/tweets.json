@@ -1,0 +1,32 @@
+[
+{
+"id" : "1",
+"from_user" : "John Doe",
+"time" : "1396626556263",
+"text" : "This is my first tweet, yay!"
+},
+{
+"id" : "2",
+"from_user" : "Jane Doe",
+"time" : "1396616556263",
+"text" : "Whats up, world?"
+},
+{
+"id" : "3",
+"from_user" : "SpongeBob",
+"time" : "1396616256263",
+"text" : "In bikini bottom!"
+},
+{
+"id" : "4",
+"from_user" : "Patrick Star",
+"time" : "1396616556163",
+"text" : "Its me, Patrick!"
+},
+{
+"id" : "5",
+"from_user" : "Ol Captain",
+"time" : "1336216556263",
+"text" : "Ahoy there!"
+}
+]
