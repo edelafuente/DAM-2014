@@ -81,21 +81,35 @@ $(function(){
             console.log("Error removing: ", e);
         };
 
+        store.transaction.oncomplete = function (){
+            getAllTodoItems();
+        };
+
     };
 
-    var update = function(identText){
+    var update = function(identText, todoText, completion){
         var transaction = db.transaction(["todo-list"], "readwrite");
         var store = transaction.objectStore("todo-list");
         var identNumber = parseInt(identText);
 
-        //var request = store.delete(identNumber);
+        var data = {
+            "text": todoText,
+            "timeStamp": identNumber,
+            "completed" : completion
+        };
+
+        var request = store.put(data);
 
         request.onsuccess = function(e) {
-            console.log("Sucessful update: "+e);
+            console.log("Sucessful add: "+e);
         };
 
         request.onerror = function(e) {
-            console.log("Error updating: ", e);
+            console.log("Error adding: ", e);
+        };
+
+        store.transaction.oncomplete = function (){
+            getAllTodoItems();
         };
 
     };
@@ -113,7 +127,7 @@ $(function(){
             var result = e.target.result;
             if(result){
 
-            $('#todoItems').append('<li>'+result.value.text+'</li>');
+            $('#todoItems').append('<li>'+result.value.text+'<input type="button" value="-" class="borrado" id="'+result.value.timeStamp+'" />'+'</li>');
             result.continue();
             }
         };
@@ -128,16 +142,16 @@ $(function(){
         var transaction = db.transaction(["todo-list"]);
         var store = transaction.objectStore("todo-list");
 
-        var index = store.index('completed');
-        var cursorRequest = index.openCursor();
+        var cursorRequest = store.openCursor();
 
         cursorRequest.onsuccess = function(e) {
             var result = e.target.result;
-            if(result.value.completed === 'true'){
-
-            console.log(result.value.text);
-            $('#compItems').append('<li>'+result.value.text+'</li>');
-            result.continue();
+            if (result){
+                if(result.value.completed === 'true'){
+                    console.log(result.value.text);
+                    $('#compItems').append('<li>'+result.value.text+'</li>');
+                }
+                result.continue();
             }
 
         };
@@ -145,21 +159,35 @@ $(function(){
 
     var addTask = function () {
         var todo = document.getElementById("todo");
-        add(todo.value, 'false');
-        todo.value = "";
+        if (todo.value.length > 0){
+            add(todo.value, 'false');
+            todo.value = "";
+        }
 
     };
 
-    var removeTask = function () {
+    var removeTaskByKey = function () {
         var id = document.getElementById("ident");
-        remove(id.value);
-        todo.value = "";
+        if (id.value.length > 0){
+            remove(id.value);
+            id.value = "";
+        }
+    };
+
+    var removeTask = function (e) {
+        var $ident = this.id;
+        remove($ident);
     };
 
     var updateTask = function () {
         var id = document.getElementById("ident");
-        update(id.value);
-        todo.value = "";
+        var todo = document.getElementById("todo");
+        
+        if (id.value.length > 0 && todo.value.length > 0){
+            update(id.value, todo.value, 'false');
+            todo.value = "";
+            id.value = "";
+        }
     };
 
     var init = function () {
@@ -167,9 +195,10 @@ $(function(){
     };
 
     $(document).on('click','#anadir', addTask);
-    $(document).on('click','#quitar', removeTask);
+    $(document).on('click','#quitar', removeTaskByKey);
     $(document).on('click','#cambiar', updateTask);
     $(document).on('click','#conseguirComp', getTasks);
+    $(document).on('click','.borrado', removeTask);
     window.addEventListener("DOMContentLoaded", init, false);
 
 });

@@ -1,5 +1,5 @@
 #contenido1{
-    width: 30%;
+    width: 50%;
     min-height: 300px;
     margin-left: 5%;
     background-color: LightGray;
@@ -8,4 +8,12 @@
 #inputs,#buttons{
     margin-left: 10px;
     margin-top: 10px;
+}
+#todoItems{
+	background-color: LightBlue;
+	margin: 10px;
+}
+#compItems{
+	background-color: LightGreen;
+	margin: 10px;
 }
