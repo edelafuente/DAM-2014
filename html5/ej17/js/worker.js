@@ -1,6 +1,7 @@
 this.addEventListener('message', function(e) {
     var data = e.data;
     var num = data.number;
+    var primos = [];
 
     var isPrime = function (numb) {
         if(numb < 2) return false;
@@ -11,10 +12,11 @@ this.addEventListener('message', function(e) {
         return true;
     };
 
-    for(var j = 0; j < num; j++){
+    for(var j = 0; j <= num; j++){
         if(isPrime(j)){
-            this.postMessage(j+', ');
+            primos.push(j+' ');
         }
     }
+    this.postMessage(primos);
 
 }, false);

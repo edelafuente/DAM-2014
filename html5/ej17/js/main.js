@@ -10,7 +10,7 @@ $(function(){
 
 
     worker.addEventListener('message', function(e) {
-    $('#resultado').append(e.data);
+    $('#resultado').text(e.data);
         }, false);
 
 
