@@ -113,7 +113,6 @@ $(function(){
             var result = e.target.result;
             if(result){
 
-            console.log(result.value.text);
             $('#todoItems').append('<li>'+result.value.text+'</li>');
             result.continue();
             }
@@ -122,26 +121,7 @@ $(function(){
         cursorRequest.onerror = onerror;
     };
 
-    var addTask = function () {
-        var todo = document.getElementById("todo");
-        add(todo.value, 'true');
-        todo.value = "";
-
-    };
-
-    var removeTask = function () {
-        var id = document.getElementById("ident");
-        remove(id.value);
-        todo.value = "";
-    };
-
-    var updateTask = function () {
-        var id = document.getElementById("ident");
-        update(id.value);
-        todo.value = "";
-    };
-
-    var getTasks = function () {
+        var getTasks = function () {
         var todos = document.getElementById("compItems");
         todos.innerHTML = "";
 
@@ -161,6 +141,25 @@ $(function(){
             }
 
         };
+    };
+
+    var addTask = function () {
+        var todo = document.getElementById("todo");
+        add(todo.value, 'false');
+        todo.value = "";
+
+    };
+
+    var removeTask = function () {
+        var id = document.getElementById("ident");
+        remove(id.value);
+        todo.value = "";
+    };
+
+    var updateTask = function () {
+        var id = document.getElementById("ident");
+        update(id.value);
+        todo.value = "";
     };
 
     var init = function () {
