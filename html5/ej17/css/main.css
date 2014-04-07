@@ -1,0 +1,11 @@
+#contenido{
+    width: 50%;
+    min-height: 300px;
+    margin-left: 5%;
+    background-color: LightGray;
+    border: 1px solid gray;
+}
+article{
+    margin-left: 10px;
+    margin-top: 10px;
+}
