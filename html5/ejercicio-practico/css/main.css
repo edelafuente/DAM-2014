@@ -1,0 +1,24 @@
+#inicio{
+    width: 90%;
+    background-color: LightGreen;
+    border: 1px solid green;
+    min-height: 400px;
+    margin-left: 2%;
+    color: DarkSlateGrey;
+    padding-bottom: 10px;
+}
+
+header{
+    width: 90%;
+    background-color: green;
+    border: 1px solid green;
+    margin-top: 2%;
+    margin-left: 2%;
+    color: white;
+}
+header h1{
+    text-align: center;
+}
+h2{
+    margin-left: 1em;
+}
