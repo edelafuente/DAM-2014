@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex" />
+
+  <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script type="text/javascript" src="../libs/jquery-2.1.0.min.js"></script>
+  <script type="text/javascript" src="../libs/jquery.mobile-1.4.2.min.js"></script>
+
+  <title>My jQuerymobile</title>
+</head>
+<body>
+  <div data-role="page" id="pag1">
+    <div data-role="header">
+      <h1>Aplicación Okk!</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <p>Primera página de la aplicación.</p>
+      <p>Avanza en el tiempo: <a href="#pag2" data-transition="slide">vamos!</a></p>
+      <a href="#mypanel">Panel</a> <!-- El panel no se cierra con swipe -->
+    </div>
+    <div data-role="panel" id="mypanel" data-display="push" data-position="left">
+      <ul>
+        <li>Primera</li>
+        <li>Segunda</li>
+        <li>Tercera</li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Qué buen día hace!</h4>
+    </div>
+  </div>
+
+  <div data-role="page" id="pag2">
+    <div data-role="header">
+      <h1>Aplicación Okk!</h1>
+    </div>
+    <div role="main" class="ui-content">
+      <p>Segunda página con más contenido.</p>
+      <p><a href="index2.html" data-ajax="false" data-transition="slide">Adelante!</a></p>
+      <a href="#popup1" data-rel="popup">Abrir</a>
+      <div data-role="popup" id="popup1">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete"
+        data-iconpos="notext" class="ui-btn-right">Close</a>
+        <p>Has abierto esto para nada ;)<p>
+      </div>
+      <p><a href="index2.html" data-rel="back" data-ajax="false" data-transition="slide">Atrás...</a></p>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4>Parece que va a llover...</h4>
+    </div>
+  </div>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+  </html>
