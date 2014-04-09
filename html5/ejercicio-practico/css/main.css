@@ -29,3 +29,6 @@ h2{
 span{
     margin: 1em;
 }
+img{
+    max-width: 100%;
+}
