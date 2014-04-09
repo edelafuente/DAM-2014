@@ -1,19 +1,23 @@
-#inicio{
-    width: 90%;
+#container{
+    width: 96%;
     background-color: LightGreen;
     border: 1px solid green;
+    position: absolute;
+    margin: 2% 2% 2% 2%;
+}
+
+#contenedor{
+}
+
+#inicio1, #inicio2, #inicio3{
+    padding-top: 10px;
     min-height: 400px;
-    margin-left: 2%;
     color: DarkSlateGrey;
-    padding-bottom: 10px;
 }
 
 header{
-    width: 90%;
     background-color: green;
     border: 1px solid green;
-    margin-top: 2%;
-    margin-left: 2%;
     color: white;
 }
 header h1{
@@ -21,4 +25,7 @@ header h1{
 }
 h2{
     margin-left: 1em;
+}
+span{
+    margin: 1em;
 }
