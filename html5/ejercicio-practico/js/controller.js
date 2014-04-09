@@ -6,11 +6,7 @@ App.controller = (function() {
         var player = 'John Doe';
         App.data.conseguirJugador(player, function(data){
             var jugador = data;
-            App.ui.mostrarComienzo(function(cargado){
-                console.log(cargado);
-                App.ui.mostrarJuego(jugador);
-            });
-            
+            App.ui.mostrarJuego(jugador);            
         });
     };
 

@@ -7,6 +7,7 @@ App.events = (function() {
     $(document).on('click','.jugador',App.controller.mostrarJugador);
     $(document).on('click','#encuesta',App.controller.hacerEncuesta);
     $(document).on('click','#atras',App.ui.mostrarInicio);
+    $(document).on('click','#titulo',App.ui.mostrarInicio);
 
 
     return {};
