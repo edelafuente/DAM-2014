@@ -33,8 +33,9 @@ $(function(){
         var $this = $(this);
         //crear contenido del popup
         var popupContent = '<div data-role="popup" id="popup1"><a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>';
-        popupContent+= '<div id="popupDiv" style=" background:'+this.id+'></div><p>'+this.id+' '+$this.data('color')+'</p>';
+        popupContent+='<input id="picker" type="color" name="color" id="color" value="'+$this.data('color')+'" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-focus">';
         popupContent+='</div>';
+        console.log(popupContent);
         //insertarlo y desencadenar pagecreate
         $('body').append(popupContent).trigger('create');
         //llamar a popup('open')
