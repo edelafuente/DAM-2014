@@ -23,8 +23,14 @@ $(function(){
 		$('footer').html('<div class="ui-block-a"><h4 class="ui-title">'+this.id+'</h4></div>');
 		$('footer').append('<div class="ui-block-b"><h4 class="ui-title">'+$this.data('color')+'</h4></div>');
 	};
+    var nombrado = function(e){
+        var pagina = e.currentTarget.documentURI;
+        if (pagina.indexOf('pagInf') !== -1){$('footer').html('<h4 class="ui-title">Información</h4>');}
+        else{$('footer').html('<h4 class="ui-title">Escoge un color</h4>');}
+    }
 
-	$(document).on('tap','.caja',mostrarColor);
+    $(document).on('tap','.caja',mostrarColor);
+	$(document).on('pagechange',nombrado);
 
 
 });
