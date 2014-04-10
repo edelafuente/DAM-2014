@@ -17,14 +17,59 @@
 <body>
   <div data-role="page" id="pag1">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanel1">M</a>
       <h1>Colores CSS</h1>
     </header>
     <div role="main" class="ui-content">
-      <div id="matriz" class="ui-grid-d">
+      <div id="matriz" class="ui-grid-b">
       </div>
     </div>
-    <footer data-role="footer" data-position="fixed" data-tap-toggle="false">
+    <div id="leftpanel1" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false"> 
+        <a href="#" data-icon="home" data-theme="b" data-role="button">Inicio</a>
+        <a href="#" data-icon="edit" data-role="button">Azules</a>
+        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
+        <a href="#" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#" data-icon="edit" data-role="button">Blancos</a>
+        <a href="#" data-icon="edit" data-role="button">Grises</a>
+        <a href="#" data-icon="edit" data-role="button">Morados</a>
+        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pag2" data-icon="info" data-role="button">Información</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
       <h4>Escoge un color</h4>
+    </footer>
+  </div>
+  <div data-role="page" id="pag2">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanel2">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="informacion" class="ui-grid-b">
+        <p>Esta es una aplicación para obtener de forma sencilla los 147 colores con nombre que CSS tiene definidos. </p>
+        <p>Pulsando sobre un color se obtiene su nombre y su código hexadecimal.</p>
+        <p>Espero que te sea de ayuda! ;)</p>
+      </div>
+    </div>
+    <div id="leftpanel2" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false"> 
+        <a href="#pag1" data-icon="home" data-role="button">Inicio</a>
+        <a href="#" data-icon="edit" data-role="button">Azules</a>
+        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
+        <a href="#" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#" data-icon="edit" data-role="button">Blancos</a>
+        <a href="#" data-icon="edit" data-role="button">Grises</a>
+        <a href="#" data-icon="edit" data-role="button">Morados</a>
+        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#" data-icon="info" data-theme="b" data-role="button">Información</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Información</h4>
     </footer>
   </div>
 <script type="text/javascript" src="js/main.js"></script>

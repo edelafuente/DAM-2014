@@ -4,37 +4,24 @@ $(function(){
     $.getJSON('data/css-color-names.json', function(json, textStatus) {
         console.log(json);
         var index = 0;
-        var digito;
+        var a= [1,4,7,10,13,16,19,22,25,28,31,34,37,40,43,46,49,52,55,58,61,64,67,70,73,76,79,82,85,88,91,94,97,100,103,106,109,112,115,118,121,124,127,130,133,136,139,142,145]
+        var b= [2,5,8,11,14,17,20,23,26,29,32,35,38,41,44,47,50,53,56,59,62,65,68,71,74,77,80,83,86,89,92,95,98,101,104,107,110,113,116,119,122,125,128,131,134,137,140,143,146]
+        var c= [3,6,9,12,15,18,21,24,27,30,33,36,39,42,45,58,51,54,57,60,63,66,69,72,75,78,81,84,87,90,93,96,99,102,105,108,111,114,117,120,123,126,129,132,135,138,141,144,147]
         var letra;
-        //a:1,6,11,16,21,26,31,36,41,46,51,56,61,66,71,76,81,86,91,96,101,106,111,116
-        //b:2,7,12,17,22,...
-        //c:3,8,13,18,23,...
-        //d:4,9,14,19,24,...
-        //e:5,10,15,20,25,...
         for (var color in json){
-        	digito = ++index%10;
-        	switch(digito)
-        	{
-        		case 1: letra = 'a'; break;
-        		case 2: letra = 'b'; break;
-        		case 3: letra = 'c'; break;
-        		case 4: letra = 'd'; break;
-        		case 5: letra = 'e'; break;
-        		case 6: letra = 'a'; break;
-        		case 7: letra = 'b'; break;
-        		case 8: letra = 'c'; break;
-        		case 9: letra = 'd'; break;
-        		case 0: letra = 'e'; break;
-        	}
-        	console.log(digito+': '+letra);
+            index++;
+            if(a.indexOf(index) > -1){letra = 'a'}
+            if(b.indexOf(index) > -1){letra = 'b'}
+        	if(c.indexOf(index) > -1){letra = 'c'}
+        	
         	$('#matriz').append('<div id="'+color+'" data-color="'+json[color]+'"'+'style=" background:'+color+' ;"'+' class="caja ui-block-'+letra+'"></div>');
         }
     });
 
 	var mostrarColor = function(e){
 		var $this = $(this);
-		$('header').html('<h4 class="ui-title">'+this.id+'</h4>');
-		$('footer').html('<h4 class="ui-title">'+$this.data('color')+'</h4>');
+		$('footer').html('<div class="ui-block-a"><h4 class="ui-title">'+this.id+'</h4></div>');
+		$('footer').append('<div class="ui-block-b"><h4 class="ui-title">'+$this.data('color')+'</h4></div>');
 	};
 
 	$(document).on('tap','.caja',mostrarColor);
