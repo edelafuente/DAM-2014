@@ -15,6 +15,7 @@
   <title>My jQuerymobile</title>
 </head>
 <body>
+<!-- Pagina inicial -->
   <div data-role="page" id="pagIni">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
       <a data-iconpos="notext" data-icon="bars" href="#leftpanel1">M</a>
@@ -25,7 +26,7 @@
       </div>
     </div>
     <div id="leftpanel1" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
-      <div data-role="controlgroup" data-corners="false"> 
+      <div data-role="controlgroup" data-corners="false">
         <a href="#" data-icon="home" data-theme="b" data-role="button">Inicio</a>
         <a href="#" data-icon="edit" data-role="button">Azules</a>
         <a href="#" data-icon="edit" data-role="button">Amarillos</a>
@@ -35,6 +36,7 @@
         <a href="#" data-icon="edit" data-role="button">Grises</a>
         <a href="#" data-icon="edit" data-role="button">Morados</a>
         <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
         <a href="#pagInf" data-icon="info" data-role="button">Información</a>
       </div>
     </div>
@@ -42,6 +44,7 @@
       <h4>Escoge un color</h4>
     </footer>
   </div>
+<!-- Pagina informacion -->
   <div data-role="page" id="pagInf">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
       <a data-iconpos="notext" data-icon="bars" href="#leftpanel2">M</a>
@@ -55,7 +58,7 @@
       </div>
     </div>
     <div id="leftpanel2" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
-      <div data-role="controlgroup" data-corners="false"> 
+      <div data-role="controlgroup" data-corners="false">
         <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
         <a href="#" data-icon="edit" data-role="button">Azules</a>
         <a href="#" data-icon="edit" data-role="button">Amarillos</a>
@@ -65,11 +68,43 @@
         <a href="#" data-icon="edit" data-role="button">Grises</a>
         <a href="#" data-icon="edit" data-role="button">Morados</a>
         <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
         <a href="#" data-icon="info" data-theme="b" data-role="button">Información</a>
       </div>
     </div>
     <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
       <h4>Información</h4>
+    </footer>
+  </div>
+  <!-- Pagina otros -->
+  <div data-role="page" id="pagOtr">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanel3">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="informacion" class="ui-grid-b">
+        <p>En esta sección, se puede escoger cualquier color.</p>
+        <input id="picker" type="color" name="color" id="color" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-focus">
+      </div>
+    </div>
+    <div id="leftpanel3" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false">
+        <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+        <a href="#" data-icon="edit" data-role="button">Azules</a>
+        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
+        <a href="#" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#" data-icon="edit" data-role="button">Blancos</a>
+        <a href="#" data-icon="edit" data-role="button">Grises</a>
+        <a href="#" data-icon="edit" data-role="button">Morados</a>
+        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#" data-icon="plus" data-theme="b" data-role="button">Otros colores</a>
+        <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Otros colores</h4>
     </footer>
   </div>
 <script type="text/javascript" src="js/main.js"></script>
