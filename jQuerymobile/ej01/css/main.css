@@ -28,15 +28,17 @@ header a{
  	text-align: center;
  }
 .ui-input-text{
-    width: 50%;
+    width: 70%;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
 }
-#popupDiv{
-    height: 50px;
+#popup1 .ui-input-text{
+    height: 200px;
+    width: 200px;
 }
 #popup1{
+    background-color: white;
     height: 250px;
     width: 250px;
 }
