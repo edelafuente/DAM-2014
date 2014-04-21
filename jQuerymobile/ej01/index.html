@@ -15,89 +15,219 @@
   <title>My jQuerymobile</title>
 </head>
 <body>
-<!-- Pagina inicial -->
+  <!-- Pagina inicial -->
   <div data-role="page" id="pagIni">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
-      <a data-iconpos="notext" data-icon="bars" href="#leftpanel1">M</a>
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelIni">M</a>
       <h1>Colores CSS</h1>
     </header>
     <div role="main" class="ui-content">
-      <div id="matrizIni" class="ui-grid-b">
-      </div>
+      <div id="matrizIni" class="ui-grid-b"></div>
     </div>
-    <div id="leftpanel1" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+    <div id="leftpanelIni" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
       <div data-role="controlgroup" data-corners="false">
         <a href="#" data-icon="home" data-theme="b" data-role="button">Inicio</a>
         <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
-        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
-        <a href="#" data-icon="edit" data-role="button">Rojos</a>
-        <a href="#" data-icon="edit" data-role="button">Verdes</a>
-        <a href="#" data-icon="edit" data-role="button">Blancos</a>
-        <a href="#" data-icon="edit" data-role="button">Grises</a>
-        <a href="#" data-icon="edit" data-role="button">Morados</a>
-        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
         <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
         <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
       </div>
     </div>
     <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
       <h4>Escoge un color</h4>
     </footer>
   </div>
-<!-- Pagina azules -->
+  <!-- Pagina azules -->
   <div data-role="page" id="pagAzu">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
-      <a data-iconpos="notext" data-icon="bars" href="#leftpanel4">M</a>
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelAzu">M</a>
       <h1>Colores CSS</h1>
     </header>
     <div role="main" class="ui-content">
-      <div id="matrizAzu" class="ui-grid-b">
-      </div>
+      <div id="matrizAzu" class="ui-grid-b"></div>
     </div>
-    <div id="leftpanel4" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+    <div id="leftpanelAzu" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
       <div data-role="controlgroup" data-corners="false">
         <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
         <a href="#" data-icon="edit" data-theme="b" data-role="button">Azules</a>
-        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
-        <a href="#" data-icon="edit" data-role="button">Rojos</a>
-        <a href="#" data-icon="edit" data-role="button">Verdes</a>
-        <a href="#" data-icon="edit" data-role="button">Blancos</a>
-        <a href="#" data-icon="edit" data-role="button">Grises</a>
-        <a href="#" data-icon="edit" data-role="button">Morados</a>
-        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
         <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
         <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
       </div>
     </div>
     <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
-      <h4>Escoge un color</h4>
+      <h4>Azules</h4>
     </footer>
   </div>
+  <!-- Pagina rojos -->
+  <div data-role="page" id="pagRoj">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelRoj">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="matrizRoj" class="ui-grid-b"></div>
+    </div>
+    <div id="leftpanelRoj" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false">
+        <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+        <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+        <a href="#" data-icon="edit" data-theme="b" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+        <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Rojos</h4>
+    </footer>
+  </div>
+  <!-- Pagina verdes -->
+  <div data-role="page" id="pagVer">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelVer">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="matrizVer" class="ui-grid-b"></div>
+    </div>
+    <div id="leftpanelVer" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false">
+        <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+        <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#" data-icon="edit" data-theme="b" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+        <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Verdes</h4>
+    </footer>
+  </div>
+  <!-- Pagina grises -->
+  <div data-role="page" id="pagGri">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelGri">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="matrizGri" class="ui-grid-b"></div>
+    </div>
+    <div id="leftpanelGri" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false">
+        <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+        <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#" data-icon="edit" data-theme="b" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+        <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Grises</h4>
+    </footer>
+  </div>
+  <!-- Pagina morados -->
+  <div data-role="page" id="pagMor">
+    <header data-role="header" data-position="fixed" data-tap-toggle="false">
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelMor">M</a>
+      <h1>Colores CSS</h1>
+    </header>
+    <div role="main" class="ui-content">
+      <div id="matrizMor" class="ui-grid-b"></div>
+    </div>
+    <div id="leftpanelMor" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+      <div data-role="controlgroup" data-corners="false">
+        <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+        <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-theme="b" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+        <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
+      </div>
+    </div>
+    <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+      <h4>Morados</h4>
+    </footer>
+  </div>
+  <!-- Pagina rosas -->
+    <div data-role="page" id="pagRos">
+      <header data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a data-iconpos="notext" data-icon="bars" href="#leftpanelRos">M</a>
+        <h1>Colores CSS</h1>
+      </header>
+      <div role="main" class="ui-content">
+        <div id="matrizRos" class="ui-grid-b">
+        </div>
+      </div>
+      <div id="leftpanelRos" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+        <div data-role="controlgroup" data-corners="false">
+          <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+          <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+          <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+          <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+          <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+          <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+          <a href="#" data-icon="edit" data-theme="b" data-role="button">Rosas</a>
+          <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+          <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+          <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
+        </div>
+      </div>
+      <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+        <h4>Rosas</h4>
+      </footer>
+    </div>
   <!-- Pagina otros -->
   <div data-role="page" id="pagOtr">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
-      <a data-iconpos="notext" data-icon="bars" href="#leftpanel2">M</a>
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelOtr">M</a>
       <h1>Colores CSS</h1>
     </header>
     <div role="main" class="ui-content">
       <div id="informacion" class="ui-grid-b">
         <p>En esta sección, se puede escoger cualquier color.</p>
-        <input id="picker" type="color" name="color" id="color" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-focus">
-      </div>
+        <input id="picker" type="color" name="color" id="color" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset ui-focus"></div>
     </div>
-    <div id="leftpanel2" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+    <div id="leftpanelOtr" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
       <div data-role="controlgroup" data-corners="false">
         <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
         <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
-        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
-        <a href="#" data-icon="edit" data-role="button">Rojos</a>
-        <a href="#" data-icon="edit" data-role="button">Verdes</a>
-        <a href="#" data-icon="edit" data-role="button">Blancos</a>
-        <a href="#" data-icon="edit" data-role="button">Grises</a>
-        <a href="#" data-icon="edit" data-role="button">Morados</a>
-        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
         <a href="#" data-icon="plus" data-theme="b" data-role="button">Otros colores</a>
         <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
       </div>
     </div>
     <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
@@ -107,35 +237,68 @@
   <!-- Pagina informacion -->
   <div data-role="page" id="pagInf">
     <header data-role="header" data-position="fixed" data-tap-toggle="false">
-      <a data-iconpos="notext" data-icon="bars" href="#leftpanel3">M</a>
+      <a data-iconpos="notext" data-icon="bars" href="#leftpanelInf">M</a>
       <h1>Colores CSS</h1>
     </header>
     <div role="main" class="ui-content">
       <div id="informacion" class="ui-grid-b">
-        <p>Esta es una aplicación para obtener de forma sencilla los 147 colores con nombre que CSS reconoce.</p>
-        <p>Pulsando sobre un color se obtiene su nombre y su código hexadecimal.</p>
+        <p>
+          Esta es una aplicación para obtener de forma sencilla los 147 colores con nombre que CSS reconoce.
+        </p>
         <p>Espero que la aplicación sea de ayuda! ;)</p>
       </div>
     </div>
-    <div id="leftpanel3" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+    <div id="leftpanelInf" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
       <div data-role="controlgroup" data-corners="false">
         <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
         <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
-        <a href="#" data-icon="edit" data-role="button">Amarillos</a>
-        <a href="#" data-icon="edit" data-role="button">Rojos</a>
-        <a href="#" data-icon="edit" data-role="button">Verdes</a>
-        <a href="#" data-icon="edit" data-role="button">Blancos</a>
-        <a href="#" data-icon="edit" data-role="button">Grises</a>
-        <a href="#" data-icon="edit" data-role="button">Morados</a>
-        <a href="#" data-icon="edit" data-role="button">Rosas</a>
+        <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+        <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+        <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+        <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+        <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
         <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
         <a href="#" data-icon="info" data-theme="b" data-role="button">Información</a>
+        <a href="#pagAyu" data-icon="gear" data-role="button">Ayuda</a>
       </div>
     </div>
     <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
       <h4>Información</h4>
     </footer>
   </div>
-<script type="text/javascript" src="js/main.js"></script>
+  <!-- Pagina ayuda -->
+    <div data-role="page" id="pagAyu">
+      <header data-role="header" data-position="fixed" data-tap-toggle="false">
+        <a data-iconpos="notext" data-icon="bars" href="#leftpanelAyu">M</a>
+        <h1>Colores CSS</h1>
+      </header>
+      <div role="main" class="ui-content">
+        <div id="ayuda" class="ui-grid-b">
+        <p>Usos la aplicación:</p>
+        <p>Pulsar sobre un color para obtener su nombre y código hexadecimal.</p>
+        <p>Pulsación larga para abrir un popup con dicho color y poder modificarlo.</p>
+        <p>Filtrar los colores con el menu lateral.</p>
+        <p>Opción para escoger color desde 0 en el menu lateral.</p>
+        </div>
+      </div>
+      <div id="leftpanelAyu" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open" data-theme="a" data-display="overlay" data-position="left" data-position-fixed="true" data-role="panel">
+        <div data-role="controlgroup" data-corners="false">
+          <a href="#pagIni" data-icon="home" data-role="button">Inicio</a>
+          <a href="#pagAzu" data-icon="edit" data-role="button">Azules</a>
+          <a href="#pagRoj" data-icon="edit" data-role="button">Rojos</a>
+          <a href="#pagVer" data-icon="edit" data-role="button">Verdes</a>
+          <a href="#pagGri" data-icon="edit" data-role="button">Grises</a>
+          <a href="#pagMor" data-icon="edit" data-role="button">Morados</a>
+          <a href="#pagRos" data-icon="edit" data-role="button">Rosas</a>
+          <a href="#pagOtr" data-icon="plus" data-role="button">Otros colores</a>
+          <a href="#pagInf" data-icon="info" data-role="button">Información</a>
+          <a href="#" data-icon="gear" data-theme="b" data-role="button">Ayuda</a>
+        </div>
+      </div>
+      <footer data-role="footer" data-position="fixed" data-tap-toggle="false" class="ui-bar ui-bar-a ui-grid-a" role="contentinfo">
+        <h4>Ayuda</h4>
+      </footer>
+    </div>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
-  </html>
+</html>

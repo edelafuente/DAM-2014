@@ -24,7 +24,7 @@ header a{
  .ui-controlgroup {
      margin:0;
  }
- #informacion{
+ #informacion, #ayuda{
  	text-align: center;
  }
 .ui-input-text{

@@ -1,7 +1,6 @@
 {
   "aqua": "#00ffff",
   "aliceblue": "#f0f8ff",
-  "antiquewhite": "#faebd7",
   "blue": "#0000ff",
   "cyan": "#00ffff",
   "darkblue": "#00008b",
@@ -23,21 +22,17 @@
   "steelblue": "#4682b4",
   "darkslateblue": "#483d8b",
   "mediumturquoise": "#48d1cc",
-  "indigo": "#4b0082",
   "cadetblue": "#5f9ea0",
   "cornflowerblue": "#6495ed",
   "mediumaquamarine": "#66cdaa",
   "slateblue": "#6a5acd",
   "mediumslateblue": "#7b68ee",
   "aquamarine": "#7fffd4",
-  "chartreuse": "#7fff00",
   "lightskyblue": "#87cefa",
   "skyblue": "#87ceeb",
-  "blueviolet": "#8a2be2",
   "lightblue": "#add8e6",
   "paleturquoise": "#afeeee",
   "lightsteelblue": "#b0c4de",
   "powderblue": "#b0e0e6",
-  "lightcyan": "#e0ffff",
-  "azure": "#f0ffff"
+  "lightcyan": "#e0ffff"
 }

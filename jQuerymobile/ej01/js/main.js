@@ -2,7 +2,7 @@ $(function(){
     'use strict';
 
     //cargar json de colores
-    var cargarColores = function(colores){
+    var cargarColores = function(colores, matriz){
         $.getJSON(colores, function(json, textStatus) {
             console.log(json);
             var index = 0;
@@ -21,7 +21,7 @@ $(function(){
                 if(c.indexOf(index) > -1){
                     letra = 'c';
                 }
-                $('#matrizIni').append('<div id="'+color+'" data-color="'+json[color]+'"'+'style=" background:'+color+' ;"'+' class="caja ui-block-'+letra+'"></div>');
+                $(matriz).append('<div id="'+color+'" data-color="'+json[color]+'"'+'style=" background:'+color+' ;"'+' class="caja ui-block-'+letra+'"></div>');
             }
         });
     };
@@ -62,30 +62,40 @@ $(function(){
         var pagina = e.currentTarget.documentURI;
         if (pagina.indexOf('pagInf') !== -1){$('footer').html('<h4 class="ui-title">Información</h4>');}
         else if (pagina.indexOf('pagOtr') !== -1){$('footer').html('<h4 class="ui-title">Otros colores</h4>');}
+        else if (pagina.indexOf('pagAyu') !== -1){$('footer').html('<h4 class="ui-title">Ayuda</h4>');}
         else if (pagina.indexOf('pagAzu') !== -1){$('footer').html('<h4 class="ui-title">Azules</h4>');}
+        else if (pagina.indexOf('pagRoj') !== -1){$('footer').html('<h4 class="ui-title">Rojos</h4>');}
+        else if (pagina.indexOf('pagVer') !== -1){$('footer').html('<h4 class="ui-title">Verdes</h4>');}
+        else if (pagina.indexOf('pagGri') !== -1){$('footer').html('<h4 class="ui-title">Grises</h4>');}
+        else if (pagina.indexOf('pagMor') !== -1){$('footer').html('<h4 class="ui-title">Morados</h4>');}
+        else if (pagina.indexOf('pagRos') !== -1){$('footer').html('<h4 class="ui-title">Rosas</h4>');}
 
         else{$('footer').html('<h4 class="ui-title">Escoge un color</h4>');}
     };
 
     var cargarColor = function(e){
         //segun en que pagina estemos, cargar un json "filtrado"
+        var contenedor = '#matriz';
         var pagina = e.currentTarget.documentURI;
         //conseguir el identificador de cada pagina
         var codigo = pagina.substr(pagina.length - 3);
         var jsonColor = 'data/css-color-';
+        contenedor += codigo;
         jsonColor += codigo;
         jsonColor += '.json';
-        if(codigo === '01/'){
+        if(codigo === '01/'){//pagina principal
             jsonColor = 'data/css-color-names.json';
+            contenedor = '#matrizIni';
         }
-        console.log(jsonColor);
-        // !!! necesario segundo parametro para id de matriz, mismo patron
-        //cargarColores(jsonColor);
+        if (codigo !== 'Otr' && codigo !== 'Inf' && codigo !== 'Ayu'){
+            console.log(jsonColor +' '+ contenedor);
+            cargarColores(jsonColor, contenedor);
+        }
     };
 
 
     //al iniciar cargar el json con todos los colores
-    cargarColores('data/css-color-names.json');
+    cargarColores('data/css-color-names.json', '#matrizIni');
 
     $(document).on('tap','.caja',mostrarColor);
     $(document).on('taphold','.caja',popupColor);
