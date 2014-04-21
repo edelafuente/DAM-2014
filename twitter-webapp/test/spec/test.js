@@ -91,7 +91,7 @@
             });
         });
         
-        /*describe('get-all method', function (){
+        describe('get-all method', function (){
             it('get all tweets', function (done){
                 DB.getAllTweets(
                     function(tweets){//success
@@ -104,7 +104,7 @@
                         throw err;
                     });
             });
-        });*/
+        });
 
         describe('remove method', function (){
             it('remove a tweet', function (done){
@@ -121,13 +121,12 @@
             });
         });
 
-        describe('remove all method', function (){
+        describe('remove-all method', function (){
             it('remove all tweets', function (done){
                  DB.removeAllTweets(
-                      function(removed){//success
-                        console.log('Removed '+removed+' tweets');
+                      function(removes){//success
+                        console.log('Removed '+removes+' tweets');
                         done();
-                        assert.strictEqual(removed, 3);
                     },
                     function(err){//error
                         console.log(err);

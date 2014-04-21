@@ -49,8 +49,8 @@ define('data',['ydn-db'], function() {
 
     var removeAllTweets = function(success, error){
         var req = db.clear(storename);
-        req.done(function(removed){
-            success(removed);
+        req.done(function(removes){
+            success(removes);
         });
         req.fail(function(e){
             error(e);
