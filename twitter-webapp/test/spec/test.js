@@ -89,39 +89,51 @@
                         throw err;
                     });
             });
-
-            describe('get-all method', function (){
-                it('get all tweets', function (done){
-                    DB.getAllTweets(
-                        function(tweets){//success
-                            console.log(tweets);
-                            done();
-                            assert.strictEqual(tweets.length, 4);
-                        },
-                        function(err){//error
-                            console.log(err);
-                            throw err;
-                        });
-                });
+        });
+        
+        /*describe('get-all method', function (){
+            it('get all tweets', function (done){
+                DB.getAllTweets(
+                    function(tweets){//success
+                        console.log(tweets);
+                        done();
+                        assert.strictEqual(tweets.length, 4);
+                    },
+                    function(err){//error
+                        console.log(err);
+                        throw err;
+                    });
             });
+        });*/
 
-            describe('remove method', function (){
-                it('remove a tweet', function (done){
-                    DB.removeTweet('000000000',
-                        function(removed){//success
-                            console.log('Removed '+removed+' tweet');
-                            done();
-                            assert.strictEqual(removed, 1);
-                        },
-                        function(err){//error
-                            console.log(err);
-                            throw err;
-                        });
-                });
+        describe('remove method', function (){
+            it('remove a tweet', function (done){
+                DB.removeTweet('000000000',
+                    function(removed){//success
+                        console.log('Removed '+removed+' tweet');
+                        done();
+                        assert.strictEqual(removed, 1);
+                    },
+                    function(err){//error
+                        console.log(err);
+                        throw err;
+                    });
             });
+        });
 
-
-
+        describe('remove all method', function (){
+            it('remove all tweets', function (done){
+                 DB.removeAllTweets(
+                      function(removed){//success
+                        console.log('Removed '+removed+' tweets');
+                        done();
+                        assert.strictEqual(removed, 3);
+                    },
+                    function(err){//error
+                        console.log(err);
+                        throw err;
+                    });
+            });
         });
     });
 

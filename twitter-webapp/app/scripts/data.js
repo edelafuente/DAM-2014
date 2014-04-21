@@ -47,10 +47,21 @@ define('data',['ydn-db'], function() {
         });
     };
 
+    var removeAllTweets = function(success, error){
+        var req = db.clear(storename);
+        req.done(function(removed){
+            success(removed);
+        });
+        req.fail(function(e){
+            error(e);
+        });
+    };
+
     return{
         putTweet : putTweet,
         getTweet : getTweet,
         getAllTweets : getAllTweets,
-        removeTweet : removeTweet
+        removeTweet : removeTweet,
+        removeAllTweets : removeAllTweets
     };
 });
