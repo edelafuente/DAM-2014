@@ -90,7 +90,7 @@
                     });
             });
         });
-        
+
         describe('get-all method', function (){
             it('get all tweets', function (done){
                 DB.getAllTweets(
@@ -123,7 +123,7 @@
 
         describe('remove-all method', function (){
             it('remove all tweets', function (done){
-                 DB.removeAllTweets(
+                DB.removeAllTweets(
                       function(removes){//success
                         console.log('Removed '+removes+' tweets');
                         done();

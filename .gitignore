@@ -1,5 +1,9 @@
 #Linux
 .*
+!.bowerrc
+!.editorconfig
+!.gitattributes
+!.jshintrc
 !.gitignore
 *~
 
