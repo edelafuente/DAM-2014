@@ -17,6 +17,13 @@ define('data',['ydn-db'], function() {
         });
     };
 
+    var addTweets = function(tweets, success, error){
+
+        var req = db.add({name: storename, keyPath: 'id'}, tweets);
+        req.done(success);
+        req.fail(error);
+    };
+
     var getTweet = function(id, success, error){
         var req = db.get(storename, id);
         req.done(function(record){
@@ -62,6 +69,7 @@ define('data',['ydn-db'], function() {
         getTweet : getTweet,
         getAllTweets : getAllTweets,
         removeTweet : removeTweet,
-        removeAllTweets : removeAllTweets
+        removeAllTweets : removeAllTweets,
+        addTweets : addTweets
     };
 });

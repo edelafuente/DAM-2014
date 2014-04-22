@@ -97,7 +97,7 @@
                     function(tweets){//success
                         console.log(tweets);
                         done();
-                        assert.strictEqual(tweets.length, 4);
+                        assert.strictEqual(tweets.length, 100);
                     },
                     function(err){//error
                         console.log(err);
