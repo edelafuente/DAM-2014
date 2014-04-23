@@ -41,11 +41,11 @@
             done();
         });
         it('data and service are under spy', function(done){
-            ctrl.getTweetsFromTwitter();
-            if(assert.isTrue(srv.getTweets.calledOnce,'getTweets not called')){
+            ctrl.getTweetsFromTwitter(function(){
                 assert.isTrue(DB.addTweets.calledOnce,'addTweets not called');
-            }
-            done();
+                done();
+            },function(){console.log('Uh-oh');});
+            assert.isTrue(srv.getTweets.calledOnce,'getTweets not called');
         });
 
     });
