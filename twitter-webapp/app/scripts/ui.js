@@ -1,13 +1,17 @@
-define('ui', ['jquery'], function(){
+define('ui', ['jquery', 'handlebars'], function($, Handlebars){
     'use strict';
 
     console.log('ui module started');
 
-    var showTeets = function(){
-        var $list = $('#tweetlist');
+    var showTweets = function(tweets, success, error){
+        var $list = $('#list-tpl').html();
+        var template = Handlebars.compile($list);
+        var html = template({tweets : tweets});
+        $('#tweetlist').html(html);
+        success();
     };
 
     return {
-        showTeets : showTeets
+        showTweets : showTweets
     };
 });

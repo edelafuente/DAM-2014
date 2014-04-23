@@ -1,0 +1,263 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink /usr/bin/node
+5 warn package.json twitter-webapp@0.0.0 No description
+6 warn package.json twitter-webapp@0.0.0 No repository field.
+7 warn package.json twitter-webapp@0.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose install where, deps [ '/home/daw/workspace/DAM-2014/twitter-webapp',
+9 verbose install   [ 'grunt',
+9 verbose install     'grunt-contrib-copy',
+9 verbose install     'grunt-contrib-concat',
+9 verbose install     'grunt-contrib-uglify',
+9 verbose install     'grunt-contrib-jshint',
+9 verbose install     'grunt-contrib-cssmin',
+9 verbose install     'grunt-contrib-connect',
+9 verbose install     'grunt-contrib-clean',
+9 verbose install     'grunt-contrib-htmlmin',
+9 verbose install     'grunt-bower-install',
+9 verbose install     'grunt-bower-requirejs',
+9 verbose install     'grunt-contrib-requirejs',
+9 verbose install     'grunt-contrib-imagemin',
+9 verbose install     'grunt-contrib-watch',
+9 verbose install     'grunt-rev',
+9 verbose install     'grunt-autoprefixer',
+9 verbose install     'grunt-usemin',
+9 verbose install     'grunt-mocha',
+9 verbose install     'grunt-modernizr',
+9 verbose install     'grunt-newer',
+9 verbose install     'grunt-svgmin',
+9 verbose install     'grunt-concurrent',
+9 verbose install     'load-grunt-tasks',
+9 verbose install     'time-grunt',
+9 verbose install     'jshint-stylish' ] ]
+10 info preinstall twitter-webapp@0.0.0
+11 verbose readDependencies using package.json deps
+12 verbose already installed skipping grunt-contrib-requirejs@~0.4.1 /home/daw/workspace/DAM-2014/twitter-webapp
+13 verbose already installed skipping grunt-bower-install@~0.7.0 /home/daw/workspace/DAM-2014/twitter-webapp
+14 verbose already installed skipping grunt-contrib-htmlmin@~0.1.3 /home/daw/workspace/DAM-2014/twitter-webapp
+15 verbose cache add [ 'grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git#v0.7.2',
+15 verbose cache add   null ]
+16 verbose cache add name=undefined spec="grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git#v0.7.2" args=["grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git#v0.7.2",null]
+17 verbose parsed url { protocol: null,
+17 verbose parsed url   slashes: null,
+17 verbose parsed url   auth: null,
+17 verbose parsed url   host: null,
+17 verbose parsed url   port: null,
+17 verbose parsed url   hostname: null,
+17 verbose parsed url   hash: '#v0.7.2',
+17 verbose parsed url   search: null,
+17 verbose parsed url   query: null,
+17 verbose parsed url   pathname: 'grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git',
+17 verbose parsed url   path: 'grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git',
+17 verbose parsed url   href: 'grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git#v0.7.2' }
+18 verbose already installed skipping grunt-contrib-imagemin@~0.2.0 /home/daw/workspace/DAM-2014/twitter-webapp
+19 verbose cache add name="grunt-bower-requirejs" spec="git://github.com/popox/grunt-bower-requirejs.git#v0.7.2" args=["grunt-bower-requirejs","git://github.com/popox/grunt-bower-requirejs.git#v0.7.2"]
+20 verbose parsed url { protocol: 'git:',
+20 verbose parsed url   slashes: true,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: 'github.com',
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: 'github.com',
+20 verbose parsed url   hash: '#v0.7.2',
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: '/popox/grunt-bower-requirejs.git',
+20 verbose parsed url   path: '/popox/grunt-bower-requirejs.git',
+20 verbose parsed url   href: 'git://github.com/popox/grunt-bower-requirejs.git#v0.7.2' }
+21 silly lockFile a0189cac--popox-grunt-bower-requirejs-git git://github.com/popox/grunt-bower-requirejs.git
+22 verbose lock git://github.com/popox/grunt-bower-requirejs.git /home/daw/.npm/a0189cac--popox-grunt-bower-requirejs-git.lock
+23 verbose already installed skipping grunt-contrib-watch@~0.5.2 /home/daw/workspace/DAM-2014/twitter-webapp
+24 verbose already installed skipping grunt-rev@~0.1.0 /home/daw/workspace/DAM-2014/twitter-webapp
+25 verbose addRemoteGit [ 'git://github.com/popox/grunt-bower-requirejs.git', 'v0.7.2' ]
+26 verbose already installed skipping grunt-usemin@~0.1.10 /home/daw/workspace/DAM-2014/twitter-webapp
+27 verbose already installed skipping grunt-autoprefixer@~0.5.0 /home/daw/workspace/DAM-2014/twitter-webapp
+28 verbose already installed skipping grunt-newer@~0.6.0 /home/daw/workspace/DAM-2014/twitter-webapp
+29 verbose already installed skipping grunt-svgmin@~0.2.0 /home/daw/workspace/DAM-2014/twitter-webapp
+30 verbose already installed skipping grunt-mocha@~0.4.0 /home/daw/workspace/DAM-2014/twitter-webapp
+31 verbose already installed skipping grunt-modernizr@~0.4.0 /home/daw/workspace/DAM-2014/twitter-webapp
+32 verbose already installed skipping grunt-concurrent@~0.4.0 /home/daw/workspace/DAM-2014/twitter-webapp
+33 verbose already installed skipping time-grunt@~0.2.0 /home/daw/workspace/DAM-2014/twitter-webapp
+34 verbose already installed skipping load-grunt-tasks@~0.2.0 /home/daw/workspace/DAM-2014/twitter-webapp
+35 verbose already installed skipping grunt@~0.4.1 /home/daw/workspace/DAM-2014/twitter-webapp
+36 verbose already installed skipping jshint-stylish@~0.1.3 /home/daw/workspace/DAM-2014/twitter-webapp
+37 verbose already installed skipping grunt-contrib-copy@~0.4.1 /home/daw/workspace/DAM-2014/twitter-webapp
+38 verbose already installed skipping grunt-contrib-uglify@~0.2.0 /home/daw/workspace/DAM-2014/twitter-webapp
+39 verbose already installed skipping grunt-contrib-concat@~0.3.0 /home/daw/workspace/DAM-2014/twitter-webapp
+40 verbose already installed skipping grunt-contrib-jshint@~0.7.0 /home/daw/workspace/DAM-2014/twitter-webapp
+41 verbose already installed skipping grunt-contrib-cssmin@~0.7.0 /home/daw/workspace/DAM-2014/twitter-webapp
+42 verbose already installed skipping grunt-contrib-connect@~0.5.0 /home/daw/workspace/DAM-2014/twitter-webapp
+43 verbose already installed skipping grunt-contrib-clean@~0.5.0 /home/daw/workspace/DAM-2014/twitter-webapp
+44 verbose git clone git://github.com/popox/grunt-bower-requirejs.git Cloning into bare repository '/home/daw/.npm/_git-remotes/git-github-com-popox-grunt-bower-requirejs-git-a0189cac'...
+45 verbose git fetch -a origin (git://github.com/popox/grunt-bower-requirejs.git)
+46 verbose git rev-list -n1 v0.7.2 dc328172709435adb5dd90fbbe7dd74618893ed9
+47 verbose resolved git url git://github.com/popox/grunt-bower-requirejs.git#dc328172709435adb5dd90fbbe7dd74618893ed9
+48 verbose tar unpack /home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/tmp.tgz
+49 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+50 verbose lock tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package /home/daw/.npm/5d15f3f1-86163-0-9531168860848993-package.lock
+51 silly lockFile a878b628-86163-0-9531168860848993-tmp-tgz tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/tmp.tgz
+52 verbose lock tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/tmp.tgz /home/daw/.npm/a878b628-86163-0-9531168860848993-tmp-tgz.lock
+53 silly gunzTarPerm modes [ '755', '644' ]
+54 silly gunzTarPerm extractEntry
+55 silly gunzTarPerm modified mode [ '', 509, 493 ]
+56 silly gunzTarPerm extractEntry .editorconfig
+57 silly gunzTarPerm modified mode [ '.editorconfig', 436, 420 ]
+58 silly gunzTarPerm extractEntry .gitattributes
+59 silly gunzTarPerm modified mode [ '.gitattributes', 436, 420 ]
+60 silly gunzTarPerm extractEntry .gitignore
+61 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+62 silly gunzTarPerm extractEntry .jshintrc
+63 silly gunzTarPerm modified mode [ '.jshintrc', 436, 420 ]
+64 silly gunzTarPerm extractEntry .travis.yml
+65 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+66 silly gunzTarPerm extractEntry Gruntfile.js
+67 silly gunzTarPerm modified mode [ 'Gruntfile.js', 436, 420 ]
+68 silly gunzTarPerm extractEntry bower.json
+69 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+70 silly gunzTarPerm extractEntry contributing.md
+71 silly gunzTarPerm modified mode [ 'contributing.md', 436, 420 ]
+72 silly gunzTarPerm extractEntry package.json
+73 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+74 silly gunzTarPerm extractEntry readme.md
+75 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+76 silly gunzTarPerm extractEntry tasks/
+77 silly gunzTarPerm modified mode [ 'tasks/', 509, 493 ]
+78 silly gunzTarPerm extractEntry tasks/bower-requirejs.js
+79 silly gunzTarPerm modified mode [ 'tasks/bower-requirejs.js', 436, 420 ]
+80 silly gunzTarPerm extractEntry test/
+81 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+82 silly gunzTarPerm extractEntry test/fixtures/
+83 silly gunzTarPerm modified mode [ 'test/fixtures/', 509, 493 ]
+84 silly gunzTarPerm extractEntry test/fixtures/baseurl-expected.js
+85 silly gunzTarPerm modified mode [ 'test/fixtures/baseurl-expected.js', 436, 420 ]
+86 silly gunzTarPerm extractEntry test/fixtures/baseurl.js
+87 silly gunzTarPerm modified mode [ 'test/fixtures/baseurl.js', 436, 420 ]
+88 silly gunzTarPerm extractEntry test/fixtures/config-expected.js
+89 silly gunzTarPerm modified mode [ 'test/fixtures/config-expected.js', 436, 420 ]
+90 silly gunzTarPerm extractEntry test/fixtures/config.js
+91 silly gunzTarPerm modified mode [ 'test/fixtures/config.js', 436, 420 ]
+92 silly gunzTarPerm extractEntry test/fixtures/global-config-expected.js
+93 silly gunzTarPerm modified mode [ 'test/fixtures/global-config-expected.js', 436, 420 ]
+94 silly gunzTarPerm extractEntry test/fixtures/global-config.js
+95 silly gunzTarPerm modified mode [ 'test/fixtures/global-config.js', 436, 420 ]
+96 silly gunzTarPerm extractEntry test/fixtures/pathless-config-expected.js
+97 silly gunzTarPerm modified mode [ 'test/fixtures/pathless-config-expected.js', 436, 420 ]
+98 silly gunzTarPerm extractEntry test/fixtures/pathless-config.js
+99 silly gunzTarPerm modified mode [ 'test/fixtures/pathless-config.js', 436, 420 ]
+100 silly gunzTarPerm extractEntry test/test.js
+101 silly gunzTarPerm modified mode [ 'test/test.js', 436, 420 ]
+102 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+103 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+104 silly lockFile a878b628-86163-0-9531168860848993-tmp-tgz tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/tmp.tgz
+105 silly lockFile a878b628-86163-0-9531168860848993-tmp-tgz tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/tmp.tgz
+106 verbose tar pack [ '/home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz',
+106 verbose tar pack   '/home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package' ]
+107 verbose tarball /home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+108 verbose folder /home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+109 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+110 verbose lock tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package /home/daw/.npm/5d15f3f1-86163-0-9531168860848993-package.lock
+111 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+112 verbose lock tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz /home/daw/.npm/981d6c31-ower-requirejs-0-7-2-package-tgz.lock
+113 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+114 silly lockFile 5d15f3f1-86163-0-9531168860848993-package tar:///home/daw/tmp/npm-8502-1ANQmhIz/1398273486163-0.9531168860848993/package
+115 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+116 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+117 silly lockFile 1922a595-nt-bower-requirejs-0-7-2-package /home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+118 verbose lock /home/daw/.npm/grunt-bower-requirejs/0.7.2/package /home/daw/.npm/1922a595-nt-bower-requirejs-0-7-2-package.lock
+119 silly lockFile 1922a595-nt-bower-requirejs-0-7-2-package /home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+120 silly lockFile 1922a595-nt-bower-requirejs-0-7-2-package /home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+121 verbose tar unpack /home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+122 silly lockFile fe29c40f-nt-bower-requirejs-0-7-2-package tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+123 verbose lock tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package /home/daw/.npm/fe29c40f-nt-bower-requirejs-0-7-2-package.lock
+124 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+125 verbose lock tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz /home/daw/.npm/981d6c31-ower-requirejs-0-7-2-package-tgz.lock
+126 silly gunzTarPerm modes [ '755', '644' ]
+127 silly gunzTarPerm extractEntry package.json
+128 silly gunzTarPerm extractEntry readme.md
+129 silly gunzTarPerm extractEntry tasks/bower-requirejs.js
+130 silly lockFile fe29c40f-nt-bower-requirejs-0-7-2-package tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+131 silly lockFile fe29c40f-nt-bower-requirejs-0-7-2-package tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package
+132 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+133 silly lockFile 981d6c31-ower-requirejs-0-7-2-package-tgz tar:///home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz
+134 verbose chmod /home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz 644
+135 verbose chown /home/daw/.npm/grunt-bower-requirejs/0.7.2/package.tgz [ 1000, 1000 ]
+136 silly lockFile a0189cac--popox-grunt-bower-requirejs-git git://github.com/popox/grunt-bower-requirejs.git
+137 silly lockFile a0189cac--popox-grunt-bower-requirejs-git git://github.com/popox/grunt-bower-requirejs.git
+138 silly resolved [ { name: 'grunt-bower-requirejs',
+138 silly resolved     version: '0.7.2',
+138 silly resolved     description: 'Automagically wire-up installed Bower components into your RequireJS config',
+138 silly resolved     keywords:
+138 silly resolved      [ 'gruntplugin',
+138 silly resolved        'bower',
+138 silly resolved        'requirejs',
+138 silly resolved        'rjs',
+138 silly resolved        'config',
+138 silly resolved        'wire',
+138 silly resolved        'install',
+138 silly resolved        'component',
+138 silly resolved        'package',
+138 silly resolved        'module' ],
+138 silly resolved     homepage: 'https://github.com/yeoman/grunt-bower-requirejs',
+138 silly resolved     bugs: { url: 'https://github.com/yeoman/grunt-bower-requirejs/issues' },
+138 silly resolved     license: 'BSD',
+138 silly resolved     author:
+138 silly resolved      { name: 'Sindre Sorhus',
+138 silly resolved        email: 'sindresorhus@gmail.com',
+138 silly resolved        url: 'http://sindresorhus.com' },
+138 silly resolved     maintainers: [ [Object] ],
+138 silly resolved     contributors: [ [Object] ],
+138 silly resolved     main: 'Gruntfile.js',
+138 silly resolved     repository:
+138 silly resolved      { type: 'git',
+138 silly resolved        url: 'git://github.com/yeoman/grunt-bower-requirejs.git' },
+138 silly resolved     scripts: { test: 'grunt test' },
+138 silly resolved     dependencies: { requirejs: '~2.1.5', slash: '~0.1.0' },
+138 silly resolved     devDependencies:
+138 silly resolved      { matchdep: '~0.1.1',
+138 silly resolved        grunt: '~0.4.0',
+138 silly resolved        'grunt-contrib-jshint': '~0.6.2',
+138 silly resolved        'grunt-contrib-clean': '~0.5.0',
+138 silly resolved        'grunt-contrib-copy': '~0.4.0',
+138 silly resolved        'grunt-contrib-nodeunit': '~0.2.0',
+138 silly resolved        bower: '~1.x',
+138 silly resolved        'durable-json-lint': '0.0.1' },
+138 silly resolved     peerDependencies: { grunt: '~0.4.0', bower: '~1.x' },
+138 silly resolved     engines: { node: '>=0.8.0' },
+138 silly resolved     files: [ 'tasks/bower-requirejs.js' ],
+138 silly resolved     readme: '# grunt-bower-requirejs [![Build Status](https://secure.travis-ci.org/yeoman/grunt-bower-requirejs.png?branch=master)](http://travis-ci.org/yeoman/grunt-bower-requirejs)\n\nAutomagically wire-up installed Bower components into your RequireJS config\n\n\n## Getting Started\n\nIf you haven\'t used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a Gruntfile as well as install and use grunt plugins. Once you\'re familiar with that process, install this plugin with this command:\n\n```shell\nnpm install grunt-bower-requirejs --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-bower-requirejs\');\n```\n\n[grunt]: http://gruntjs.com\n[Getting Started]: http://gruntjs.com/getting-started\n\n\n## Example usage\n\n```js\ngrunt.initConfig({\n\tbower: {\n\t\ttarget: {\n\t\t\trjsConfig: \'app/config.js\'\n\t\t}\n\t}\n});\n\ngrunt.loadNpmTasks(\'grunt-bower-requirejs\');\n\ngrunt.registerTask(\'default\', [\'bower\']);\n```\n\n\n## Documentation\n\nWhen the `bower` task is run it merges the paths of installed Bower components into the `paths` property of your RequireJS config.\n\nYou trigger this task from another task in your Gruntfile or through the CLI: `grunt bower`\n\n\n### rjsConfig\n\n**Required**  \nType: `String`\n\nSpecify a relative path to your RequireJS config.\n\nMake sure to specify the `baseUrl` property in your RequireJS config if you want to use relative paths.\n\n\n### Options\n\n#### exclude\n\nDefault: `[]`  \nType: `Array`\n\nSpecify components to be excluded from being added to the RequireJS config.\n\n#### baseUrl\n\nDefault: `null`  \nType: `String`\n\nGenerate paths relative to a specific directory. This option is for anyone **not** using `data-main` who wishes to set their own base.\n\n\n## Things to remember\n\n### Config file\n\nYou need to already have a config.js file at the location specified by `rjsConfig`. At a minimum, the file should look like this:\n\n``` js\nrequirejs.config({\n\tbaseUrl: \'./\',\n\tpaths: {}\n});\n```\n\nYou still need to create a path for *your* js files. The grunt task will only create paths for third party libraries specified in `bower.json`.\n\n``` js\nrequirejs.config({\n\tbaseUrl: \'./\',\n\tpaths: {\n\t\tmyComponent: \'js/myComponent.js\'\n\t}\n});\n```\n\nThe task does not overwrite the config file, it just adds additional paths to it. So paths you add will be preserved. Keep in mind that if you change or remove one of your bower dependencies after you\'ve run the task, that path will still exist in the config file and you\'ll need to manually remove it.\n\n### RequireJS component\n\nAlthough RequireJS does not provide a `bower.json` file, a path to `require.js` will still be created in your `rjsConfig` file. The path\'s name will be `requirejs`. If you are optimizing your scripts with `r.js` you can use this path to make sure RequireJS is included in your bundle.\n\n\n## License\n\n[BSD license](http://opensource.org/licenses/bsd-license.php) and copyright Google\n',
+138 silly resolved     readmeFilename: 'readme.md',
+138 silly resolved     _id: 'grunt-bower-requirejs@0.7.2',
+138 silly resolved     dist: { shasum: 'bff3c09ea76eab9d7dde61a2bf22f34b2f3d772b' },
+138 silly resolved     _resolved: 'git://github.com/popox/grunt-bower-requirejs.git#dc328172709435adb5dd90fbbe7dd74618893ed9',
+138 silly resolved     _from: 'grunt-bower-requirejs@git://github.com/popox/grunt-bower-requirejs.git#v0.7.2' } ]
+139 info install grunt-bower-requirejs@0.7.2 into /home/daw/workspace/DAM-2014/twitter-webapp
+140 info installOne grunt-bower-requirejs@0.7.2
+141 info /home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs unbuild
+142 info preuninstall grunt-bower-requirejs@0.7.2
+143 info uninstall grunt-bower-requirejs@0.7.2
+144 verbose true,/home/daw/workspace/DAM-2014/twitter-webapp/node_modules,/home/daw/workspace/DAM-2014/twitter-webapp/node_modules unbuild grunt-bower-requirejs@0.7.2
+145 info postuninstall grunt-bower-requirejs@0.7.2
+146 info /home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs unbuild
+147 error error rolling back Error: EACCES, unlink '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js'
+147 error error rolling back  grunt-bower-requirejs@0.7.2 { [Error: EACCES, unlink '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js']
+147 error error rolling back   errno: 3,
+147 error error rolling back   code: 'EACCES',
+147 error error rolling back   path: '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js' }
+148 error Error: EACCES, unlink '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js'
+148 error  { [Error: EACCES, unlink '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js']
+148 error   errno: 3,
+148 error   code: 'EACCES',
+148 error   path: '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js' }
+149 error Please try running this command again as root/Administrator.
+150 error System Linux 3.5.0-47-generic
+151 error command "/usr/bin/node" "/usr/bin/npm" "install"
+152 error cwd /home/daw/workspace/DAM-2014/twitter-webapp
+153 error node -v v0.10.26
+154 error npm -v 1.4.3
+155 error path /home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js
+156 error code EACCES
+157 error errno 3
+158 error stack Error: EACCES, unlink '/home/daw/workspace/DAM-2014/twitter-webapp/node_modules/grunt-bower-requirejs/node_modules/.bin/r.js'
+159 verbose exit [ 3, true ]

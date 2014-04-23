@@ -1,4 +1,4 @@
-define('controller', ['data','service'], function(DB, srv){
+define('controller', ['data','service', 'ui'], function(DB, srv, UI){
     'use strict';
 
 
@@ -30,6 +30,7 @@ define('controller', ['data','service'], function(DB, srv){
         srv.getTweets({},function(data){
             processTweets(data,function(tweets){
                 DB.addTweets(tweets,success,error);
+                UI.showTweets(tweets, success, error);
             },error);
         },error);
     };
