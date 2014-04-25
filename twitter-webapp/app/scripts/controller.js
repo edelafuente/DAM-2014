@@ -21,6 +21,7 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
                 };
                 tweets.push(newTweet);
             }
+            UI.showTweets(tweets);
             success(tweets);
         }
 
@@ -36,7 +37,7 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
 
     var showLatestTweets = function() {
         DB.getAllTweets(function(tweets){
-            UI.showTweets(tweets);
+            processTweets(tweets);
         },error);
 
 
