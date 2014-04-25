@@ -3,7 +3,7 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
 
 
     var error = function(err) {
-        console.log(err);
+        throw err;
     };
 
     var processTweets = function(data, success, error) {
@@ -30,12 +30,20 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
         srv.getTweets({},function(data){
             processTweets(data,function(tweets){
                 DB.addTweets(tweets,success,error);
-                UI.showTweets(tweets, success, error);
             },error);
         },error);
     };
 
+    var showLatestTweets = function() {
+        DB.getAllTweets(function(tweets){
+            UI.showTweets(tweets);
+        },error);
+
+
+    };
+
     return {
-        getTweetsFromTwitter : getTweetsFromTwitter
+        getTweetsFromTwitter : getTweetsFromTwitter,
+        showLatestTweets : showLatestTweets
     };
 });

@@ -20,7 +20,10 @@ define('data',['ydn-db'], function() {
     var addTweets = function(tweets, success, error){
 
         var req = db.add({name: storename, keyPath: 'id'}, tweets);
-        req.done(success);
+        req.done(function(){
+            throwEvent();
+            success();
+        });
         req.fail(error);
     };
 
@@ -47,6 +50,7 @@ define('data',['ydn-db'], function() {
     var removeTweet = function(id, success, error){
         var req = db.remove(storename, id);
         req.done(function(removed){
+            throwEvent();
             success(removed);
         });
         req.fail(function(e){
@@ -62,6 +66,11 @@ define('data',['ydn-db'], function() {
         req.fail(function(e){
             error(e);
         });
+    };
+
+    var throwEvent = function(){
+        var event = new Event('datachange');
+        document.dispatchEvent(event);
     };
 
     return{
