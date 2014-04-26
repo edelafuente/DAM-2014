@@ -17,7 +17,7 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
                     text : data.statuses[i].text,
                     date : new Date(data.statuses[i].created_at),
                     user : data.statuses[i].user.name,
-                    image : data.statuses[i].user.user_profile_image_url
+                    image : data.statuses[i].user.profile_image_url
                 };
                 tweets.push(newTweet);
             }
@@ -43,8 +43,14 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
 
     };
 
+    var showDetails = function(e){
+        console.log('tap done');
+        console.log(e.currentTarget.dataset.id);
+    };
+
     return {
         getTweetsFromTwitter : getTweetsFromTwitter,
-        showLatestTweets : showLatestTweets
+        showLatestTweets : showLatestTweets,
+        showDetails : showDetails
     };
 });

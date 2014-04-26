@@ -9,3 +9,6 @@ header{
 	color: #006988;
 	text-shadow: 0 0.1em #00c5ff;
 }
+li > div > span{
+	color: gray;
+}

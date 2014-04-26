@@ -55,9 +55,12 @@
         <!-- endbuild -->
         <script id="list-tpl" type="text/x-handlebars-template">
             {{#each tweets}}
-                <li class="selectable" data-id={{id}}>
-                    <strong>{{user}}</strong>
-                    <small>{{text}}</small>
+                <li class="thumb" data-id={{id}}>
+                    <img src={{image}}>
+                    <div>
+                        <strong>{{user}}</strong>
+                        <span class="text small">{{text}}</span>
+                    </div>
                 </li>
             {{/each}}
         </script>
