@@ -30,11 +30,12 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
     var getTweetsFromTwitter = function(success, error) {
         srv.getTweets({},function(data){
             processTweets(data,function(tweets){
+                console.log(tweets);
                 DB.addTweets(tweets,success,error);
             },error);
         },error);
     };
-
+    //sobra?
     var showLatestTweets = function() {
         DB.getAllTweets(function(tweets){
             processTweets(tweets);
@@ -44,8 +45,11 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
     };
 
     var showDetails = function(e){
-        console.log('tap done');
         console.log(e.currentTarget.dataset.id);
+        var tweetid = e.currentTarget.dataset.id;
+        DB.getTweet(tweetid, function(tweet){
+            UI.showDetails(tweet);
+        },error);
     };
 
     return {

@@ -28,7 +28,7 @@
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <section id="main_section" class="show">
+        <section id="main_section" data-transition="slide" class="show">
             <header data-title="Twitter">
             <nav>
                 <a href="#" data-view-aside="#" data-icon="menu">
@@ -63,6 +63,23 @@
                     </div>
                 </li>
             {{/each}}
+        </script>
+        <script id="div-det" type="text/x-handlebars-template">
+        	<section id="tweet-details" data-transition="slide">
+        	    <header data-back="chevron-left" data-title="Tweet">
+        	    	<nav class="left">
+        	        	<a href="#" data-view-section="back">
+        	            	<span class="icon chevron-left"></span>
+        	        	</a>
+        	    	</nav>
+        	    	<h1 class="title centered">Tweet</h1>
+        	    </header>
+        	    <article id="detail-article" class="active">
+        	        <div class="wrapper framed">
+        	        	<h2>{{user}}</h2>
+        	        </div>
+        	    </article>
+        	</section>
         </script>
 </body>
 </html>

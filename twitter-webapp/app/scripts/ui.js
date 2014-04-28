@@ -1,4 +1,4 @@
-define('ui', ['quo', 'handlebars'], function($, Handlebars){
+define('ui', ['quo', 'handlebars','lungo'], function($, Handlebars, Lungo){
     'use strict';
 
     console.log('ui module started');
@@ -13,7 +13,18 @@ define('ui', ['quo', 'handlebars'], function($, Handlebars){
         //success();
     };
 
+    var showDetails = function(tweet){
+    	console.log(tweet);
+    	var $divdet = $('#div-det').html();
+    	var template = Handlebars.compile($divdet);
+    	var html = template({tweet : tweet});
+    	$('body').append(html);
+    	console.log(Lungo);
+    	Lungo.RouterPhone.section('#tweet-details');
+    };
+
     return {
-        showTweets : showTweets
+        showTweets : showTweets,
+        showDetails : showDetails
     };
 });
