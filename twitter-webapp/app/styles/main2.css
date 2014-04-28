@@ -9,6 +9,19 @@ header{
 	color: #006988;
 	text-shadow: 0 0.1em #00c5ff;
 }
-li > div > span{
+li > div > span{/*simular 'small'*/
 	color: gray;
+}
+#date{
+	margin-top: 2%;
+	color: gray;
+	font-size: 0.8em;
+}
+
+#detalles{
+	min-height: 20px;
+	width: 90%;
+	margin: 5%;
+	padding: 2%;
+	background-color: white;
 }
