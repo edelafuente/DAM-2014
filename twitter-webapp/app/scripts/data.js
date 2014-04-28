@@ -18,7 +18,6 @@ define('data',['ydn-db'], function() {
     };
 
     var addTweets = function(tweets, success, error){
-        console.log(tweets);
         var req = db.add({name: storename, keyPath: 'id'}, tweets);
         req.done(function(){
             throwEvent();
