@@ -13,7 +13,6 @@ define('ui', ['quo', 'handlebars','lungo'], function($, Handlebars, Lungo){
     };
 
     var showDetails = function(tweet){
-        console.log(tweet);
     	var $divdet = $('#div-det').html();
     	var template = Handlebars.compile($divdet);
     	var html = template(tweet);

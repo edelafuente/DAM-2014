@@ -9,7 +9,6 @@ define('controller', ['data','service', 'ui'], function(DB, srv, UI){
     var processTweets = function(data, success, error) {
         var tweets =[];
         var newTweet;
-
         if (data && data.statuses && data.statuses.length > 0){
             for (var i = data.statuses.length - 1; i >= 0; i--) {
                 newTweet ={
